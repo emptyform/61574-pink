@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александр Уразаев](https://up.htmlacademy.ru/adaptive/11/user/61574).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Рогатнев](https://up.htmlacademy.ru/adaptive/11/user/86119).
 
 ---
 
