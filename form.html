@@ -5,8 +5,130 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
+    <header class="page-header">   
+        <div class="page-header__wrapper page-header__wrapper--photo">
+            <div class="page-header__logo logo logo--header">
+                <!--  в макете лого три разных используется на разных разрешениях, возможно сделаю имидж лого псеводэлементом и буду управлять содержимом через медиа запросы-->
+               <a class="logo__link" href="index.html"><img class="logo__item" src="http://placehold.it/75x22" alt="Pink" width="75" height="22"></a>
+            </div>
+            <nav class="mainnav mainnav--header">
+               <span class="mainnav__togler"><span></span></span>
+                <ul class="mainnav__wrapper">
+                    <li class="mainnav__item">
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li class="mainnav__item">
+                        <a href="photo.html">Фотографии</a>
+                    </li>
+                    <li class="mainnav__item">
+                        <a>Конкурс</a>
+                    </li>
+                    <li class="mainnav__item">
+                        <a href="https://htmlacademy.ru/">HTML Academy</a>
+                    </li>
+                </ul>
+            </nav>
+            <h1 class="pageheader__title pageheader__title--lg">Фотографии пользователей</h1>
+        </div>
+    </header>
+       
+    <section class="text-block">
+        <h2 class="ask__item">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
+        <p class="ask__item">Пожалуйста, заполните форму ниже:</p>
+    </section>
+    
+    <form action="https://echo.htmlacademy.ru" method="post">
+        <section class="form-name">
+            <h2 class="form-name__title">Укажите данные</h2>
+            <label for="firstname">Фамилия:</label>
+            <input class="form-name__firstname" type="text" id="firstname" name="firstname" placeholder="Укажите фамилию *" required>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+            <label for="name">Имя:</label>
+            <input class="form-name__name" type="text" id="name" name="name" placeholder="Введите ваше имя *" required>
 
+            <label for="lastname">Отчество:</label>
+            <input class="form-name__lastname" type="text" id="lastname" name="lastname" placeholder="Ну и отчество тоже">
+        </section>       
+         
+        <section class="form-whatapp">
+            <h2 class="form-whatapp__title">С каким приложением путешествовали?</h2>
+            
+             <label>
+                <input class="form-whatapp__radio" type="radio" name="application" value="Pink для iOS">
+                 Pink для iOS
+            </label>
+            
+            <label>
+               <input class="form-whatapp__radio" type="radio" name="application" value="Pink на Android">
+                Pink на Android
+            </label>
+            
+            <label>
+               <input class="form-whatapp__radio" type="radio" name="application" value="Windows Phone">
+                Windows Phone
+            </label>
+
+        </section>
+         
+        <section class="form-contacts">
+            <h2 class="form-contacts__title">Контактная информация</h2>
+            
+            <input class="form-contacts__tel" type="tel" id="tel" name="tel" placeholder="Номер, пожалуйста">
+            <label for="tel">Номер телефона:</label>
+
+            <input class="form-contacts__mail" type="text" id="mail" name="mail" placeholder="Введите почту *" required>
+            <label for="mail">Адрес почты:</label>
+        </section>
+         
+        <section class="form-activities">
+            <h2 class="form-activities__title">Ваши безбашенные достижения в путешествии</h2>
+            <!-- checkbox-->
+            <input class="form-activities__checkbox" type="checkbox" name="act1" id="act1">
+            <label for="act1">Сделал селфи с акулой</label>
+            
+            <input class="form-activities__checkbox" type="checkbox" name="act2" id="act2">
+            <label for="act2">Обгорел на пляже</label>
+            
+            <input class="form-activities__checkbox" type="checkbox" name="act3" id="act3">
+            <label for="act3">Видел Чака Норриса</label>
+            
+            <input class="form-activities__checkbox" type="checkbox" name="act4" id="act4">
+            <label for="act4">Накупил сувениров</label>
+            
+            <input class="form-activities__checkbox" type="checkbox" name="act5" id="act5">
+            <label for="act5">Удержал башню</label>
+            
+            <input class="form-activities__checkbox" type="checkbox" name="act6" id="act6">
+            <label for="act6">Разгромил отель</label>
+                        
+        </section>   
+            
+        <section class="form-comments">
+            <h2 class="form-comments__title">Опишите свои эмоции</h2>
+            <textarea class="form-comments__message" name="message" id="message" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+        </section>
+        
+        <button type="submit">Отправить форму</button>
+        <p class="required"><span>*</span> — обязательные поля</p> 
+    </form>
+
+    <footer class="page-footer">
+        <div class="page-footer__wrapper">
+            <div class="page-footer__logo logo logo--footer">
+                <a class="logo__link"><img class="logo__item" src="http://placehold.it/147x40" alt="Pink" width="147" height="40"></a>
+            </div>
+
+            <div class="page-footer__social social-links">
+                <a class="social-links__item social-links__item--twitter" href="#"></a>
+                <a class="social-links__item social-links__item--fb" href="#"></a>
+                <a class="social-links__item social-links__item--youtube" href="#"></a>
+            </div>
+
+            <div class="page-footer__developer">
+                <a href="https://htmlacademy.ru/intensive/adaptive">Разработано <img class="page-footer__developer-logo" src="http://placehold.it/27x34" alt="Htmlacademy" width="27" height="34"></a>
+            </div>
+        </div>
+    </footer>
+    
   </body>
 </html>
