@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">   
@@ -37,9 +38,11 @@
             <div class="promo__bg">    
                 <img class="promo__hand" src="http://placehold.it/498x314" alt="" width="498" height="314">
             </div>
+<!-- нет в мобильной верстке
             <h2 class="promo__title">
                 Взгляните на жизнь иначе!
             </h2>   
+-->
             <a class="promo__btn btn btn--lg" href="https://www.apple.com/ru/itunes/download/">Скачать приложение</a>
             <span class="promo__links">
                 <a class="promo__link promo__link--apple" href="https://www.apple.com/ru/itunes/download/"></a>
@@ -92,6 +95,7 @@
         </div>
     </section>
     
+<!-- Нет в мобильной верстке
     <section class="effect">
        <div class="effect__wrapper">
             <div class="effect__img">
@@ -102,6 +106,7 @@
             <span class="effect__link"><a href="#">Узнать больше об исследовании</a></span>
         </div>
     </section>
+-->
     
     <section class="testimonials">
         <div class="testimonials__wrapper">
@@ -162,14 +167,14 @@
                 <table class="pricelist__table">
                     <tr>
                         <th class="pricelist__table-header">
-                            <span class="marker">Хит</span>
+                            <span class="pricelist__marker">Хит</span>
                             Стандарт
-                            <small>3.99 USD</small>
+                            <small class="pricelist__small">3.99 USD</small>
                         </th>
                     </tr>
                     <tr>
                         <td class="pricelist__table-content">
-                            Розовый фильтр 
+                            Розовый фильтр <span class="check"></span>
                         </td>
                     </tr>
                     <tr>
@@ -195,16 +200,16 @@
     <section class="contacts">
         <div class="contacts__wrapper">
             <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
-            <div class="contacts__wrapper">
-                <b class="contacts__title">Звоните:</b>
+            <div class="contacts__group">
+                <b class="contacts__group-title">Звоните:</b>
                 <a class="contacts__txt" href="tel:+78125556666">+7 (812) 555-66-66</a>
             </div>
-            <div class="contacts__wrapper">
-                <b class="contacts__title">Пишите:</b>
+            <div class="contacts__group">
+                <b class="contacts__group-title">Пишите:</b>
                 <a class="contacts__txt" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </div>
-            <div class="contacts__wrapper">
-                <b class="contacts__title">Приезжайте в гости:</b>
+            <div class="contacts__group">
+                <b class="contacts__group-title">Приезжайте в гости:</b>
                 <p class="contacts__txt">
                     ул. Большая Конюшенная, 19/8
                 </p>
@@ -212,12 +217,14 @@
             <div class="map"><span class="map__marker"></span></div>
         </div>
     </section>
-    
+  <!-- в мобильной нету  
     <footer class="page-footer">
         <div class="page-footer__wrapper">
+
             <div class="logo logo--footer">
                 <a class="logo__link"><img class="logo__item" src="http://placehold.it/147x40" alt="Pink" width="147" height="40"></a>
             </div>
+
 
             <div class="social-links">
                 <a class="social-links__item social-links__item--twitter" href="#"></a>
@@ -230,6 +237,6 @@
             </div>
         </div>
     </footer>
-    
+-->
   </body>
 </html>

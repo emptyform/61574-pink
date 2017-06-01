@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">   
@@ -28,7 +29,7 @@
                     </li>
                 </ul>
             </nav>
-            <h1 class="pageheader__title pageheader__title--lg">Фотографии пользователей</h1>
+            <h1 class="page-header__title pageheader__title--lg">Фотографии пользователей</h1>
         </div>
     </header>
        
@@ -37,9 +38,9 @@
         <p class="text-block__item">Пожалуйста, заполните форму ниже:</p>
     </section>
     
-    <form action="https://echo.htmlacademy.ru" method="post">
+    <form action="https://echo.htmlacademy.ru" method="post" class="form-page">
         <section class="form-name">
-            <h2 class="form-name__title">Укажите данные</h2>
+            <h2 class="form-name__title form-page__title--hidden">Укажите данные</h2>
             <label for="firstname">Фамилия:</label>
             <input class="form-name__firstname" type="text" id="firstname" name="firstname" placeholder="Укажите фамилию *" required>
 
@@ -50,38 +51,9 @@
             <input class="form-name__lastname" type="text" id="lastname" name="lastname" placeholder="Ну и отчество тоже">
         </section>       
          
-        <section class="form-whatapp">
-            <h2 class="form-whatapp__title">С каким приложением путешествовали?</h2>
-            
-             <label>
-                <input class="form-whatapp__radio" type="radio" name="application" value="Pink для iOS">
-                 Pink для iOS
-            </label>
-            
-            <label>
-               <input class="form-whatapp__radio" type="radio" name="application" value="Pink на Android">
-                Pink на Android
-            </label>
-            
-            <label>
-               <input class="form-whatapp__radio" type="radio" name="application" value="Windows Phone">
-                Windows Phone
-            </label>
-
-        </section>
-         
-        <section class="form-contacts">
-            <h2 class="form-contacts__title">Контактная информация</h2>
-            
-            <input class="form-contacts__tel" type="tel" id="tel" name="tel" placeholder="Номер, пожалуйста">
-            <label for="tel">Номер телефона:</label>
-
-            <input class="form-contacts__mail" type="text" id="mail" name="mail" placeholder="Введите почту *" required>
-            <label for="mail">Адрес почты:</label>
-        </section>
          
         <section class="form-activities">
-            <h2 class="form-activities__title">Ваши безбашенные достижения в путешествии</h2>
+            <h2 class="form-page__title">Ваши безбашенные достижения в путешествии</h2>
             <!-- checkbox-->
             <input class="form-activities__checkbox" type="checkbox" name="act1" id="act1">
             <label for="act1">Сделал селфи с акулой</label>
@@ -102,13 +74,44 @@
             <label for="act6">Разгромил отель</label>
                         
         </section>   
+        
+         
+        <section class="form-contacts">
+            <h2 class="form-page__title">Контактная информация</h2>
+            
+            <label for="tel">Номер телефона:</label>
+            <input class="form-contacts__tel" type="tel" id="tel" name="tel" placeholder="Номер, пожалуйста">
+
+            <label for="mail">Адрес почты:</label>
+            <input class="form-contacts__mail" type="text" id="mail" name="mail" placeholder="Введите почту *" required>
+        </section>
+         
+        <section class="form-whatapp">
+            <h2 class="form-page__title">С каким приложением путешествовали?</h2>
+            
+             <label>
+                <input class="form-whatapp__radio" type="radio" name="application" value="Pink для iOS">
+                 Pink для iOS
+            </label>
+            
+            <label>
+               <input class="form-whatapp__radio" type="radio" name="application" value="Pink на Android">
+                Pink на Android
+            </label>
+            
+            <label>
+               <input class="form-whatapp__radio" type="radio" name="application" value="Windows Phone">
+                Windows Phone
+            </label>
+
+        </section>
             
         <section class="form-comments">
-            <h2 class="form-comments__title">Опишите свои эмоции</h2>
+            <h2 class="form-page__title">Опишите свои эмоции</h2>
             <textarea class="form-comments__message" name="message" id="message" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
         </section>
         
-        <button type="submit">Отправить форму</button>
+        <button class="btn form-page__submit" type="submit">Отправить форму</button>
         <p class="required"><span>*</span> — обязательные поля</p> 
     </form>
 

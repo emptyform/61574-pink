@@ -1,0 +1,12 @@
+.page-footer {
+    &__developer {
+        font-size: 14px;
+        color: #283645;
+        line-height: 1.286;
+        text-align: left;
+    }
+    &__developer a{
+        color: #283645;
+        text-decoration: none;
+    }
+}

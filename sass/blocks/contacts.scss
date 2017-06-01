@@ -1,0 +1,34 @@
+.contacts {
+    
+    &__wrapper {
+        
+    }
+    &__title {
+        font-size: 24px;
+        font-family: "Open Sans";
+        color: #283645;
+        line-height: 1.2;
+        text-align: center;
+        max-width: 250px;
+        font-weight: 300;
+    }
+    &__group {}
+    
+    &__group-title {
+        font-size: 18px;
+        color: #283645;
+        font-weight: bold;
+        line-height: 1.2;
+        text-align: center;
+        display: block;
+    }
+    
+    &__txt {
+        font-size: 24px;
+        color: #d22856;
+        line-height: 1.2;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+    }
+}

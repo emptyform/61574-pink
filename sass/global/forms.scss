@@ -1,0 +1,71 @@
+.form-page {
+    label {
+        font-size: 14px;
+        font-family: "Open Sans";
+        color: #d22856;
+        text-transform: uppercase;
+        line-height: 2.143;
+        text-align: left;
+    }
+    &__title {
+        font-size: 14px;
+        color: #d22856;
+        text-transform: uppercase;
+        line-height: 1.286;
+        text-align: center;
+        font-weight: 300;
+        //        max-width: 250px
+    }
+    &__title--hidden {
+        display: none;
+    }
+    &__submit {
+        background: #2aab6d;
+        border: none;
+        font-size: 18px;
+        color: #ffffff;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.667;
+        text-align: center;
+        padding: 15px 25px;
+        border-radius: 3px;
+    }
+}
+
+.form-name {}
+
+.form-activities {
+    background: #f2f2f2;
+    &__checkbox {
+        font-size: 18px;
+        color: #283645;
+        line-height: 1.667;
+        text-align: left;
+        display: block;
+    }
+}
+
+.form-whatapp {
+    background: #f2f2f2;
+    &__title {}
+    &__checkbox {
+        font-size: 18px;
+        color: #283645;
+        line-height: 1.667;
+        text-align: left;
+        display: block;
+    }
+}
+
+.required {
+    font-size: 14px;
+    color: #283645;
+    text-transform: uppercase;
+    line-height: 2.143;
+    text-align: center;
+}
+
+.required span {
+    color: #d22856;
+}
