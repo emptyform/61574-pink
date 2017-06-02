@@ -1,0 +1,19 @@
+.addphoto {
+    background: $bg-gray;
+    font: $font-primary;
+}
+
+.addphoto__button {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1;
+    border-width: 3px;
+    border-style: solid;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 12px;
+    background-color: transparent;
+    border-radius: 30px;
+}

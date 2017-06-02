@@ -1,0 +1,29 @@
+.promo {
+    background: $font-deep-blue-dark;
+    color: $font-light;
+}
+
+.promo__btn {
+    font-size: 18px;
+    color: $font-light;
+    line-height: 1;
+    text-align: center;
+    background-color: $font-deep-blue-dark;
+    text-decoration: none;
+    padding: 20px 40px;
+    border: 2px solid $font-light;
+    border-radius: 25px;
+    margin-top: 28px;
+    margin-bottom: 40px;
+    display: block;
+    font-weight: 700;
+}
+
+.promo__platforms {
+    font-size: 14px;
+    color: $font-light;
+    line-height: 1.714;
+    text-align: center;
+    font-weight: 300;
+    padding-bottom: 28px;
+}

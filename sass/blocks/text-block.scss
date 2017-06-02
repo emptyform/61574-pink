@@ -1,0 +1,11 @@
+.text-block {}
+
+.text-block__item {
+    font-size: 14px;
+    color: $font-deep-blue;
+    line-height: 2.143;
+    font-weight: 400;
+    max-width: 250px;
+    text-align: center;
+    display: block;
+}
