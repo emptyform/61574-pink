@@ -369,7 +369,7 @@ th {
   padding: 0; }
 
 body {
-  font-family: "Open Sans Bold", "Helvetica", "Arial", sans-serif; }
+  font-family: "Open Sans", Arial, Sans-serif; }
 
 @font-face {
   font-family: "Open Sans";
@@ -446,12 +446,12 @@ body {
 .information__promotions {
   background: #f2f2f2; }
 
-.advantage __title {
+.advantage__title {
   font-size: 24px;
   font-weight: 700;
   color: #000; }
 
-.advantage __content {
+.advantage__content {
   color: #283645;
   font-size: 14px; }
 
@@ -555,7 +555,7 @@ body {
   color: #283645;
   text-decoration: none; }
 
-.text-block __item {
+.text-block__item {
   font-size: 14px;
   color: #283645;
   line-height: 2.143;
