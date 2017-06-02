@@ -1,0 +1,11 @@
+.btn {
+    cursor: pointer;
+    &--submit {
+        color: $font-pink;
+        border-color: $font-pink;
+    }
+    &--reset {
+        color: $btn-reset;
+        border-color: $btn-reset;
+    }
+}

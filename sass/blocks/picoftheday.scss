@@ -1,51 +1,53 @@
 .picoftheday {
     position: relative;
     z-index: 1;
-//    margin-bottom: 25px;
-    
-    &__title{
-        font-size: 12px;
-        color: #ffffff;
-        font-weight: bold;
-        text-transform: uppercase;
-        line-height: 2;
-        background: #d22856;
-        display: inline-block;
-        position: absolute;
-        padding: 3px;
-        z-index: 10;
-    }
-    &__link{
-        display: block;
-    }
-    &__desc{
-        background: #f2f2f2;
-        margin: auto 20px;
-        padding: 20px;
-    }
-    &__username{
-        color: #283645;
-        font-size: 14px;
-        font-weight: 700;
-        
-    }
-    &__time{
-        font-size: 12px;
-        font-weight: 300;
-        
-    }
-    &__text{
-        color: #283645;
-        font-size: 14px;
-        font-weight: 400;
-        
-    }
-    &__meta{
-        font-size: 12px;
-        color: #d22856;
-        text-transform: uppercase;
-        line-height: 2;
-        text-align: left;
+    //    margin-bottom: 25px;
+}
 
-    }
+.picoftheday__title {
+    font-size: 12px;
+    color: $font-light;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2;
+    background: $font-pink;
+    display: inline-block;
+    position: absolute;
+    padding: 3px;
+    z-index: 10;
+}
+
+.picoftheday__link {
+    display: block;
+}
+
+.picoftheday__desc {
+    background: $bg-gray;
+    margin: auto 20px;
+    padding: 20px;
+}
+
+.picoftheday__username {
+    color: $font-deep-blue;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.picoftheday__time {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.picoftheday__text {
+    color: $font-deep-blue;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.picoftheday__meta {
+    font-size: 12px;
+    color: $font-pink;
+    text-transform: uppercase;
+    line-height: 2;
+    text-align: left;
 }

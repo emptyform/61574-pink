@@ -1,44 +1,50 @@
 .pricelist {
-    background: #f2f2f2;
-    color: #000;
-    &__wrapper {
-        padding: 20px 0;
-    }
-    &__title {
-        display: none;
-    }
-    &__table-header {
-        background: #283645;
-        color: #fff;
-        font-size: 18px;
-        font-weight: bold;
-        text-transform: uppercase;
-        line-height: 1.667;
-        text-align: center;
-    }
-    &__marker {
-        font-size: 14px;
-        color: #fff;
-        text-transform: uppercase;
-        line-height: 2.143;
-        text-align: center;
-        background: #d22856;
-    }
-    &__small {
-        font-size: 24px;
-        color: #ffffff;
-        text-transform: uppercase;
-        line-height: 1.25;
-        text-align: center;
-        display: block;
-        font-weight: 300;
-    }
-    &__table-content {
-        background: #fff;
-        color: #283645;
-        font-size: 14px;
-        text-transform: uppercase;
-        border-bottom: 2px solid #e5e5e5;
-        padding: 24px 21px;
-    }
+    background: $bg-gray;
+    color: $font-primary;
+}
+
+.pricelist__wrapper {
+    padding: 20px 0;
+}
+
+.pricelist__title {
+    display: none;
+}
+
+.pricelist__table-header {
+    background: $font-deep-blue;
+    color: $font-light;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.667;
+    text-align: center;
+}
+
+.pricelist__marker {
+    font-size: 14px;
+    color: $font-light;
+    text-transform: uppercase;
+    line-height: 2.143;
+    text-align: center;
+    background: $font-pink;
+}
+
+.pricelist__small {
+    font-size: 24px;
+    color: $font-light;
+    text-transform: uppercase;
+    line-height: 1.25;
+    text-align: center;
+    display: block;
+    font-weight: 300;
+}
+
+.pricelist__table-content {
+    background: $font-light;
+    color: $font-deep-blue;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-bottom: 2px solid $fong-dark-gray;
+    padding: 24px 21px;
 }

@@ -1,38 +1,32 @@
-.testimonials {
-    
-    
-    &__title {
-        visibility:hidden;
-        margin: 0;
-        padding: 0;
-        font-size: 0;
-    }
-    
-    &__wrapper {
-        
-    }
-    
-    &__item {
-        
-    }
-    
-    &__name {
-        font-size: 18px;
-        color: #000000;
-        font-weight: 700;
-        line-height: 1.667;
-        text-align: center;
-        display: block;
-    }
-    
-    &__occupation {
-        display: none;
-    }
-    &__txt {
-        font-size: 14px;
-        color: #283645;
-        line-height: 2.143;
-        text-align: center;
-    }
+.testimonials {}
+
+.testimonials__title {
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
 }
 
+.testimonials__wrapper {}
+
+.testimonials__item {}
+
+.testimonials__name {
+    font-size: 18px;
+    color: $font-primary;
+    font-weight: 700;
+    line-height: 1.667;
+    text-align: center;
+    display: block;
+}
+
+.testimonials__occupation {
+    display: none;
+}
+
+.testimonials__txt {
+    font-size: 14px;
+    color: $font-deep-blue;
+    line-height: 2.143;
+    text-align: center;
+}

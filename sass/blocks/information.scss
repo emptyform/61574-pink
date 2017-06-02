@@ -1,17 +1,18 @@
-.information {
-    &__wrapper{
-        margin: 46px auto;
-    }
-    
-    &__txt-tired, &__txt-offer {
-        font-size: 24px;
-        color: #283645;
-        line-height: 1.2;
-        text-align: center;
-        font-weight: 300;
-    }
-    &__promotions {
-        background: #f2f2f2;
-    }
-    
+.information {}
+
+.information__wrapper {
+    margin: 46px auto;
+}
+
+.information__txt-tired,
+.information__txt-offer {
+    font-size: 24px;
+    color: $font-deep-blue;
+    line-height: 1.2;
+    text-align: center;
+    font-weight: 300;
+}
+
+.information__promotions {
+    background: $bg-gray;
 }

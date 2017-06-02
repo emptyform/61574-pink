@@ -1,12 +1,13 @@
-.page-footer {
-    &__developer {
-        font-size: 14px;
-        color: #283645;
-        line-height: 1.286;
-        text-align: left;
-    }
-    &__developer a{
-        color: #283645;
-        text-decoration: none;
-    }
+.page-footer {}
+
+.page-footer__developer {
+    font-size: 14px;
+    color: $font-deep-blue;
+    line-height: 1.286;
+    text-align: left;
+}
+
+.page-footer__developer a {
+    color: $font-deep-blue;
+    text-decoration: none;
 }

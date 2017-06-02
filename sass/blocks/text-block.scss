@@ -1,13 +1,11 @@
-.text-block {
-    
-    &__item {
-        font-size: 14px;
-        color: #283645;
-        line-height: 2.143;
-        font-weight: 400;
-        max-width: 250px;
-        text-align: center;
-        display: block;
-    }
-    
+.text-block {}
+
+.text-block __item {
+    font-size: 14px;
+    color: $font-deep-blue;
+    line-height: 2.143;
+    font-weight: 400;
+    max-width: 250px;
+    text-align: center;
+    display: block;
 }

@@ -1,41 +1,41 @@
-.photos {
-    &__title{
-        display: none;
-    }
-    &__item{
-        background: #f2f2f2;
-        margin: 20px;
-    }
-    &__link{
-        
-    }
-    &__desc{
+.photos {}
 
-        padding: 20px;
-    }
-    &__username{
-        color: #283645;
-        font-size: 14px;
-        font-weight: 700;
-        
-    }
-    &__time{
-        font-size: 12px;
-        font-weight: 300;
-        
-    }
-    &__text{
-        color: #283645;
-        font-size: 14px;
-        font-weight: 400;
-        
-    }
-    &__meta{
-        font-size: 12px;
-        color: #d22856;
-        text-transform: uppercase;
-        line-height: 2;
-        text-align: left;
+.photos__title {
+    display: none;
+}
 
-    }
+.photos__item {
+    background: $bg-gray;
+    margin: 20px;
+}
+
+.photos__link {}
+
+.photos__desc {
+    padding: 20px;
+}
+
+.photos__username {
+    color: $font-deep-blue;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.photos__time {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.photos__text {
+    color: $font-deep-blue;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.photos__meta {
+    font-size: 12px;
+    color: $font-pink;
+    text-transform: uppercase;
+    line-height: 2;
+    text-align: left;
 }
