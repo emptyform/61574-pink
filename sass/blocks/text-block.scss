@@ -1,11 +1,39 @@
-.text-block {}
+.text-block {
+	@include container-fluid;
+}
+
+.text-block {
+	margin-top: 45px;
+	margin-bottom: 49px;
+}
 
 .text-block__item {
-    font-size: 14px;
-    color: $font-deep-blue;
-    line-height: 2.143;
-    font-weight: 400;
-    max-width: 250px;
-    text-align: center;
-    display: block;
+	font-size: 14px;
+	color: $font-deep-blue;
+	line-height: 2.143;
+	font-weight: 400;
+	text-align: center;
+	display: block;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-bottom: 10px;
 }
+
+.text-block__item span {
+	display: none;
+}
+
+@media (min-width: $breakpoint-tablet) {
+	.text-block {
+		margin-top: 93px;
+		margin-bottom: 49px;
+	}
+	.text-block__item {
+		font-size: 18px;
+	}
+	.text-block__item span {
+		display: inline;
+	}
+}
+
+@media (min-width: $breakpoint-desktop) {}

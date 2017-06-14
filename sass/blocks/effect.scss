@@ -1,0 +1,80 @@
+.effect {
+	display: none;
+}
+
+.effect__wrapper {
+	@include container-fluid;
+}
+
+@media (min-width: $breakpoint-tablet) {
+	.effect {
+		display: block;
+		margin-top: 59px;
+	}
+	.effect__wrapper {
+		display: flex
+	}
+	.effect__img,
+	.effect__txt {
+		width: 50%;
+		justify-content: space-between;
+		margin: 0;
+	}
+	.effect__txt {
+		margin-top: 10px;
+	}
+	.effect__title {
+		font-size: 30px;
+		color: $font-primary;
+		font-weight: 700;
+		max-width: 200px;
+		line-height: 37px;
+		margin-bottom: 10px;
+	}
+	.effect__content {}
+	.effect__content {
+		max-width: 95.4%;
+		margin-top: 0;
+		margin-bottom: 0;
+		color: $font-deep-blue;
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.effect__link {
+		margin-top: 10px;
+		display: block;
+	}
+	.effect__link a {
+		color: $font-pink;
+		font-size: 14px;
+	}
+}
+
+@media (min-width: $breakpoint-desktop) {
+	.effect__img {
+		width: 39%;
+	}
+	.effect__txt {
+		glex-grow: 1;
+		width: 61%;
+	}
+	.effect__title {
+		font-size: 30px;
+		margin-top: 72px;
+		max-width: 100%;
+		line-height: 37px;
+		margin-bottom: 10px;
+	}
+	.effect__content {
+		font-size: 18px;
+		line-height: 30px;
+		max-width: 90%;
+		margin-top: 22px;
+	}
+	.effect__link {
+		margin-top: 32px;
+	}
+	.effect__link a {
+		font-size: 18px;
+	}
+}

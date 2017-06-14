@@ -1,0 +1,45 @@
+.header {
+	color: $font-light;
+	background-image: url("/img/bg-back-mobile@1x.jpg");
+	//	background-size: cover;
+	background-position: center -70px;
+	background-repeat: no-repeat;
+	background-color: $font-deep-blue;
+	min-height: 170px;
+	padding-top: 30px;
+	box-sizing: border-box;
+}
+
+.header__item {
+	font-size: 24px;
+	color: #ffffff;
+	line-height: 1.2;
+	font-weight: 300;
+	margin: 0;
+	text-align: center;
+	max-width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media (min-width: $breakpoint-tablet) {
+	.header {
+		min-height: 329px;
+		padding-top: 70px;
+	}
+	.header__item {
+		font-size: 50px;
+	}
+}
+
+@media (min-width: $breakpoint-desktop) {
+	.header {
+		min-height: 417px;
+		padding-top: 195px;
+		background-size: cover;
+	}
+	.header__item {
+		font-size: 50px;
+		max-width: 50%;
+	}
+}

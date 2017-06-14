@@ -1,18 +1,113 @@
-.information {}
+.information {
+	position: relative;
+	z-index: 3;
+	margin-top: 313px;
+}
+
+.information__header {
+	background-color: $font-light;
+	@include container-fluid;
+}
 
 .information__wrapper {
-    margin: 46px auto;
+	background: $bg-gray;
 }
 
 .information__txt-tired,
 .information__txt-offer {
-    font-size: 24px;
-    color: $font-deep-blue;
-    line-height: 1.2;
-    text-align: center;
-    font-weight: 300;
+	font-size: 24px;
+	color: $font-deep-blue;
+	line-height: 1.2;
+	text-align: center;
+	font-weight: 300;
+	margin-bottom: 32px;
+	padding: 0 20px;
 }
 
 .information__promotions {
-    background: $bg-gray;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 100px;
+	@include container-fluid;
+}
+
+.information__toprow {
+	order: 2;
+	flex-grow: 1;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.information__bottomrow {}
+
+.advantage__img {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+@media (min-width: $breakpoint-tablet) {
+	.information {
+		margin-top: 0;
+	}
+	.advantage__img {
+		text-align: left;
+	}
+	.information__toprow {
+		order: 1;
+		width: 50%;
+	}
+	.information__bottomrow {
+		order: 2;
+		width: 50%;
+	}
+	.information__wrapper,
+	.information__wrapper h2 {
+		margin-top: 0;
+	}
+	.information__header {
+		width: 100%;
+		padding: 0;
+	}
+	.information__txt-tired,
+	.information__txt-offer {
+		font-size: 40px;
+	}
+	.information__header {
+		margin-top: 50px;
+		margin-bottom: 0;
+	}
+	.information__txt-offer {
+		margin-top: 0;
+		max-width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.information__promotions {
+		align-content: flex-start;
+		align-items: flex-start;
+		flex-direction: row;
+	}
+}
+
+@media (min-width: $breakpoint-desktop) {
+	.information__txt-tired,
+	.information__txt-offer {
+		font-size: 50px;
+	}
+	.information__txt-tired {
+		margin-bottom: 0;
+	}
+	.information__header {
+		margin-top: 68px;
+		margin-bottom: 0;
+	}
+	.information__toprow {
+		width: 100%;
+		display: flex;
+	}
+	.information__bottomrow {
+		width: 100%;
+		display: flex;
+	}
 }
