@@ -1,41 +1,114 @@
-.photos {}
+.photos {
+	@include container-fluid;
+}
 
 .photos__title {
-    display: none;
+	display: none;
 }
 
 .photos__item {
-    background: $bg-gray;
-    margin: 20px;
+	background: $bg-gray;
+	margin-top: 20px;
 }
 
 .photos__link {}
 
 .photos__desc {
-    padding: 20px;
+	padding: 20px;
 }
 
 .photos__username {
-    color: $font-deep-blue;
-    font-size: 14px;
-    font-weight: 700;
+	color: $font-deep-blue;
+	font-size: 14px;
+	font-weight: 700;
+	margin-bottom: 0;
 }
 
 .photos__time {
-    font-size: 12px;
-    font-weight: 300;
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: uppercase;
 }
 
 .photos__text {
-    color: $font-deep-blue;
-    font-size: 14px;
-    font-weight: 400;
+	color: $font-deep-blue;
+	font-size: 14px;
+	font-weight: 400;
+	margin-top: 5px;
+	line-height: 22px;
+	margin-bottom: 0;
 }
 
 .photos__meta {
-    font-size: 12px;
-    color: $font-pink;
-    text-transform: uppercase;
-    line-height: 2;
-    text-align: left;
+	font-size: 12px;
+	color: $font-pink;
+	text-transform: uppercase;
+	line-height: 1;
+	text-align: left;
+	margin-top: 16px;
+	position: relative;
+	padding-left: 32px;
+	display: block;
+}
+
+.photos__meta::before {
+	content: "";
+	background: $font-pink;
+	mask: url(/img/icon-heart.svg);
+	width: 13px;
+	height: 12px;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.photos__descr {
+	padding-left: 18px;
+	padding-right: 18px;
+	padding-top: 4px;
+	padding-bottom: 25px;
+}
+
+@media (min-width: $breakpoint-tablet) {
+	.photos {
+		display: flex;
+		flex-wrap: wrap;
+		align-self: center;
+		justify-content: space-between;
+	}
+	.photos__item {
+		width: 48.4%;
+	}
+	.photos__img {
+		width: 100%;
+		height: auto;
+	}	
+	.photos__text {
+		order: 3;
+	}
+	.photos__meta {
+		order: 2;
+		padding-left: 0;
+		padding-right: 32px;
+//		width: 15%;
+	}
+	.photos__meta::before {
+		content: "";
+		background: $font-pink;
+		mask: url(/img/icon-heart.svg);
+		width: 13px;
+		height: 12px;
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: auto;
+	}
+}
+
+@media (min-width: $breakpoint-desktop) {
+	.photos__item {
+		width: 32%;
+	}
 }

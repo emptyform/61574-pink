@@ -1,0 +1,33 @@
+.social-links {
+	display: flex;
+	//	margin-left: auto;
+	//	margin-right: auto;
+	justify-content: center;
+	&--footer {
+		margin-top: 8px;
+		flex-grow: 1;
+	}
+}
+
+.social-link {
+	width: 51px;
+	height: 51px;
+	display: block;
+	border-radius: 50%;
+	border: 3px solid #e9ebec;
+	text-align: center;
+	line-height: 51px;
+	box-sizing: border-box;
+	margin-right: 15px;
+	&--twitter {}
+	&--fb {}
+	&--youtube {}
+}
+
+.social-link svg {
+	fill: $color-social-links;
+}
+
+@media (min-width: $breakpoint-tablet) {}
+
+@media (min-width: $breakpoint-desktop) {}

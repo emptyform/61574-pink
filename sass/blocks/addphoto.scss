@@ -1,19 +1,61 @@
 .addphoto {
-    background: $bg-gray;
-    font: $font-primary;
+	background: $bg-gray;
+	font: $font-primary;
+	//	margin-top: 10px;
 }
 
 .addphoto__button {
-    display: block;
-    width: 100%;
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 1;
-    border-width: 3px;
-    border-style: solid;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    margin-bottom: 12px;
-    background-color: transparent;
-    border-radius: 30px;
+	display: block;
+	width: 100%;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1;
+	border-width: 3px;
+	border-style: solid;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	margin-bottom: 12px;
+	background-color: transparent;
+	border-radius: 30px;
+}
+
+.addphoto__wrapper {
+	@include container-fluid;
+	padding-top: 20px;
+}
+
+.addphoto__title {
+	@include readers-only;
+}
+
+@media (min-width: $breakpoint-tablet) {
+	.addphoto__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		align-self: center;
+		justify-content: space-between;
+	}
+	.addphoto__preview {
+		width: 48.4%;
+	}
+	.addphoto__filters {
+		width: 48.4%;
+	}
+	.page-footer__developer {
+		flex-grow: 0;
+	}
+}
+
+@media (min-width: $breakpoint-desktop) {
+	.addphoto {
+		background: $font-light;
+		//	margin-top: 10px;
+	}
+	.addphoto__wrapper {
+		background: $bg-gray;
+		
+	}
+	.addphoto__buttons {
+		display: flex;
+	}
 }

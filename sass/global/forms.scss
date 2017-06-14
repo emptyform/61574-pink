@@ -1,76 +1,168 @@
 .form-page {}
 
 .form-page label {
-    font-size: 14px;
-    font-family: "Open Sans";
-    color: $font-pink;
-    text-transform: uppercase;
-    line-height: 2.143;
-    text-align: left;
+	font-size: 14px;
+	font-family: "Open Sans";
+	color: $font-pink;
+	text-transform: uppercase;
+	line-height: 2.143;
+	text-align: left;
 }
 
 .form-page__title {
-    font-size: 14px;
-    color: $font-pink;
-    text-transform: uppercase;
-    line-height: 1.286;
-    text-align: center;
-    font-weight: 300;
-    // max-width: 250px
+	font-size: 14px;
+	color: $font-pink;
+	text-transform: uppercase;
+	line-height: 1.286;
+	text-align: center;
+	font-weight: 300;
+	// max-width: 250px
 }
 
 .form-page__title--hidden {
-    @include visually-hidden;
-    
+	@include readers-only;
 }
 
 .form-page__submit {
-    background: $status-success;
-    border: none;
-    font-size: 18px;
-    color: $font-light;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1.667;
-    text-align: center;
-    padding: 15px 25px;
-    border-radius: 3px;
-}
-
-.form-name {}
-
-.form-activities {
-    background: $bg-gray;
+	background: $status-success;
+	border: none;
+	font-size: 18px;
+	color: $font-light;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.667;
+	text-align: center;
+	padding: 15px 25px;
+	border-radius: 3px;
 }
 
 .form-page__checkbox {
-    font-size: 18px;
-    color: $font-deep-blue;
-    line-height: 1.667;
-    text-align: left;
-    display: block;
-}
-
-.form-whatapp {
-    background: $bg-gray;
+	font-size: 18px;
+	color: $font-deep-blue;
+	line-height: 1.667;
+	text-align: left;
+	display: block;
 }
 
 .form-page__checkbox {
-    font-size: 18px;
-    color: $font-deep-blue;
-    line-height: 1.667;
-    text-align: left;
-    display: block;
+	font-size: 18px;
+	color: $font-deep-blue;
+	line-height: 1.667;
+	text-align: left;
+	display: block;
 }
 
 .required {
-    font-size: 14px;
-    color: $font-deep-blue;
-    text-transform: uppercase;
-    line-height: 2.143;
-    text-align: center;
+	font-size: 14px;
+	color: $font-deep-blue;
+	text-transform: uppercase;
+	line-height: 2.143;
+	text-align: center;
 }
 
 .required span {
-    color: $font-pink;
+	color: $font-pink;
+}
+
+.form-page__submit-title {
+	@include readers-only;
+}
+
+.form-page__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	@include container-fluid;
+}
+
+.form-name {
+	order: 1;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.form-activities {
+	order: 2;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 100%;
+	background: $bg-gray;
+}
+
+.form-contacts {
+	order: 3;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.form-whatapp {
+	order: 4;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 100%;
+	background: $bg-gray;
+}
+
+.form-comments {
+	order: 5;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.form-page__submit-wrapper {
+	order: 6;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+@media (min-width: $breakpoint-tablet) {
+	.form-name {
+		order: 1;
+	}
+	.form-activities {
+		order: 4;
+		background: $font-light;
+	}
+	.form-contacts {
+		order: 3;
+	}
+	.form-whatapp {
+		background: $font-light;
+		order: 2;
+	}
+	.form-comments {
+		order: 5;
+	}
+	.form-page__submit-wrapper {
+		order: 6;
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+@media (min-width: $breakpoint-desktop) {
+	.form-name {
+		order: 1;
+		width: 50%;
+	}
+	.form-activities {
+		order: 4;
+	}
+	.form-contacts {
+		order: 3;
+	}
+	.form-whatapp {
+		order: 2;
+		width: 50%;
+	}
+	.form-comments {
+		order: 5;
+	}
+	.form-page__submit-wrapper {
+		order: 6;
+	}
 }

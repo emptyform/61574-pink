@@ -1,32 +1,107 @@
-.testimonials {}
-
-.testimonials__title {
-    visibility: hidden;
-    margin: 0;
-    padding: 0;
-    font-size: 0;
+.testimonials {
+	margin-top: -25px;
+	background-color: #fff;
+	position: relative;
+	z-index: 5;
+	margin-top: -82px;
+	padding-top: 42px;
+	padding-bottom: 66px;
+	@include container-fluid;
 }
 
-.testimonials__wrapper {}
+.testimonials__item {
+	display: none;
+	&--active {
+		display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+		flex-wrap: wrap;
+	}
+}
 
-.testimonials__item {}
+.testimonials__title {
+	visibility: hidden;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+}
 
 .testimonials__name {
-    font-size: 18px;
-    color: $font-primary;
-    font-weight: 700;
-    line-height: 1.667;
-    text-align: center;
-    display: block;
+	font-size: 18px;
+	color: $font-primary;
+	font-weight: 700;
+	line-height: 1.667;
+	text-align: center;
+	display: block;
+	order: 1;
 }
 
 .testimonials__occupation {
-    display: none;
+	display: none;
 }
 
 .testimonials__txt {
-    font-size: 14px;
-    color: $font-deep-blue;
-    line-height: 2.143;
-    text-align: center;
+	font-size: 14px;
+	color: $font-deep-blue;
+	line-height: 2.143;
+	text-align: center;
+	order: 3;
+}
+
+.testimonials__paginations {
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	background: #fff;
+	margin-top: 18px;
+}
+
+.testimonials__pagination {
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	margin-left: 9px;
+	margin-right: 9px;
+	background-color: #bec2c7;
+	cursor: pointer;
+	&--active {
+		border: 3px solid #283645;
+		background-color: #fff;
+	}
+}
+
+@media (min-width: $breakpoint-tablet) {
+	.testimonials {
+		margin-top: 33px;
+	}
+	.testimonials__txt {
+		order: 1;
+		font-size: 18px;
+		line-height: 30px;
+	}
+	.testimonials__name {
+		order: 2;
+		margin-top: 15px;
+		font-size: 20px;
+		margin-bottom: 0;
+	}
+	.testimonials__occupation {
+		order: 3;
+		display: block;
+		text-align: center;
+		font-size: 14px;
+		margin-top: 6px;
+	}
+	.testimonials__paginations {
+		margin-top: 40px;
+	}
+}
+
+@media (min-width: $breakpoint-desktop) {
+	
+	.testimonials__paginations {
+		margin-top: 40px;
+		display: none;
+	}
 }
