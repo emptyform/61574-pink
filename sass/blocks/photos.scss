@@ -54,7 +54,7 @@
 .photos__meta::before {
 	content: "";
 	background: $font-pink;
-	mask: url(/img/icon-heart.svg);
+	mask: url(../img/icon-heart.svg);
 	width: 13px;
 	height: 12px;
 	display: block;
@@ -96,7 +96,7 @@
 	.photos__meta::before {
 		content: "";
 		background: $font-pink;
-		mask: url(/img/icon-heart.svg);
+		mask: url(../img/icon-heart.svg);
 		width: 13px;
 		height: 12px;
 		display: block;
