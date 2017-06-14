@@ -1,10 +1,10 @@
 .promo {
 	background-color: $font-deep-blue-dark;
 	color: $font-light;
-	background-image: url("/img/bg-back-mobile@1x.jpg");
+	background-image: url("../img/bg-back-mobile@1x.jpg");
 	background-color: $font-deep-blue;
-	background-position: center top;
-	background-size: cover;
+	background-position: center bottom;
+//	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
 	min-height: 394px;
@@ -13,7 +13,7 @@
 
 .promo__wrapper {
 	@include container-fluid;
-	background-image: url("/img/iphone-hand-mobile@1x.png");
+	background-image: url("../img/iphone-hand-mobile@1x.png");
 	background-repeat: no-repeat;
 	background-position: bottom left;
 	min-height: 394px;
@@ -77,15 +77,15 @@
 	background-repeat: no-repeat;
 	background-size: contain;
 	&--apple {
-		background-image: url(/img/logo-apple.svg);
+		background-image: url(../img/logo-apple.svg);
 		margin-left: 23px;
 	}
 	&--google {
-		background-image: url(/img/logo-android.svg);
+		background-image: url(../img/logo-android.svg);
 		background-position: center 8px;
 	}
 	&--microsoft {
-		background-image: url(/img/logo-microsoft.svg);
+		background-image: url(../img/logo-microsoft.svg);
 		background-position: center 12px;
 		margin-right: 23px;
 	}
@@ -105,7 +105,7 @@
 		padding: 0;
 		margin: 0;
 		position: relative;
-		margin-right: 50%;
+		margin-right: 52%;
 		background-color: transparent;
 //		margin-left: 2.2%;
 		padding-top: 60px;

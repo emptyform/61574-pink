@@ -16,7 +16,7 @@
 }
 
 .mainnav__togler--open {
-	background-image: url("/img/icon-menu-cross.svg");
+	background-image: url("../img/icon-menu-cross.svg");
 	background-repeat: no-repeat;
 	width: 24px;
 	height: 24px;
@@ -33,6 +33,9 @@
 	margin: 0;
 	padding: 0;
 	box-shadow: 0 -1px 0 #000, inset 0 1px 0 rgba(255, 255, 255, .15);
+}
+.mainnav__item:nth(last-child) {
+	border-bottom: 1px solid #010101;
 }
 
 .mainnav__item a {

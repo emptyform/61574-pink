@@ -23,7 +23,7 @@
 	display: block;
 	width: 75px;
 	height: 22px;
-	background-image: url(/img/logo-pink-white-mobile.svg);
+	background-image: url(../img/logo-pink-white-mobile.svg);
 	background-repeat: no-repeat;
 }
 .logo--footer .logo__link {
@@ -38,7 +38,7 @@
 		padding-bottom: 20px;
 	}
 	.logo__link {
-		background-image: url(/img/logo-pink-blue-mobile.svg);
+		background-image: url(../img/logo-pink-blue-mobile.svg);
 		width: 147px;
 		height: 40px;
 		margin-top: 6px;
@@ -59,6 +59,6 @@
 	}
 	.logo__link {
 		// !! achtung logo big
-		background-image: url(/img/logo-pink-blue-mobile.svg);
+		background-image: url(../img/logo-pink-blue-mobile.svg);
 	}
 }
