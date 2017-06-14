@@ -1,18 +1,40 @@
 .pricelist {
-	background: $bg-gray;
 	color: $font-primary;
-	margin-top: 27px;
-}
-
-.pricelist__table {
-	width: 276px;
-	margin-left: auto;
-	margin-right: auto;
-	display: none;
+	margin-top: 7px;
+	background-color: $bg-gray;
 }
 
 .pricelist__wrapper {
 	padding: 20px 0;
+	width: 100%;
+	overflow-x: scroll;
+	background-image: url(../img/bg-triangle-white.svg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	padding-top: 123px;
+}
+
+.pricelist__table {
+	transform: translateX(-531px);
+	border-collapse: collapse;
+}
+
+.pricelist__table td,
+.pricelist__table th {
+	border: 2px solid #e5e5e5;
+}
+
+.pricelist__table-content {
+	background: $font-light;
+	color: $font-deep-blue;
+	font-size: 14px;
+	text-transform: uppercase;
+	border-bottom: 2px solid $fong-dark-gray;
+	padding: 16px 21px;
+	padding-right: 15px;
+	line-height: 28px;
+	min-width: 276px;
+	box-sizing: border-box;
 }
 
 .pricelist__title {
@@ -31,29 +53,33 @@
 	min-height: 98px;
 	height: 98px;
 	box-sizing: border-box;
+	//	width: 400px;
 }
 
 .pricelist__marker {
 	font-size: 14px;
 	color: $font-light;
 	text-transform: uppercase;
-	line-height: 2.143;
 	text-align: center;
 	transform: rotate(-45deg);
+	display: block;
+	position: absolute;
+	left: 5px;
+	top: 15px;
+	z-index: 10;
 }
 
-.pricelist__marker::before {
+.pricelist__table-header--hit::after {
 	content: "";
 	background-image: url(../img/bg-hit.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	//	transform: rotate(-35deg);
-	display: block;
 	width: 73px;
 	height: 73px;
 	position: absolute;
 	left: -2px;
 	top: 0;
+	z-index: 5;
 }
 
 .pricelist__small {
@@ -66,23 +92,13 @@
 	font-weight: 300;
 }
 
-.pricelist__table-content {
-	background: $font-light;
-	color: $font-deep-blue;
-	font-size: 14px;
-	text-transform: uppercase;
-	border-bottom: 2px solid $fong-dark-gray;
-	padding: 18px 21px;
-	box-sizing: border-box;
-}
-
 .pricelist__paginations {
 	text-align: center;
 	justify-content: center;
 	align-items: center;
 	display: flex;
 	margin-top: 20px;
-	padding-bottom: 25px;
+	padding-bottom: 46px;
 }
 
 .pricelist__pagination {
@@ -114,6 +130,7 @@
 	.pricelist__table {
 		width: 100%;
 		display: block;
+	transform: none;
 	}
 	.pricelist__paginations {
 		display: none;

@@ -10,7 +10,11 @@
 }
 
 .information__wrapper {
-	background: $bg-gray;
+	background-color: $bg-gray;
+	background-image: url(../img/bg-triangle-white.svg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	padding-top: 98px;
 }
 
 .information__txt-tired,
@@ -24,10 +28,12 @@
 	padding: 0 20px;
 }
 
+.information__txt-offer {
+	margin-bottom: 0;
+}
 .information__promotions {
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 100px;
 	@include container-fluid;
 }
 
