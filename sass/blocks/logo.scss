@@ -1,64 +1,97 @@
-.logo {
-	flex-basis: 80%;
-	flex-grow: 1;
-	padding-bottom: 26px;
-	&--header {
-		margin-left: 20px;
-	}
-	&--footer {
-	flex-basis: 100%;
-	}
-}
-
-.logo__link {
-	flex-basis: 100%;
-	flex-grow:1;
-}
-.logo__item {
-	width: 147px;
-	height: 40px;
-}
-
-.logo__link {
-	display: block;
-	width: 75px;
-	height: 22px;
-	background-image: url(../img/logo-pink-white-mobile.svg);
-	background-repeat: no-repeat;
-}
-.logo--footer .logo__link {
-	
-	width: 147px;
-	height: 40px;
-	margin-left: auto;
-	margin-right: auto;
-}
-@media (min-width: $breakpoint-tablet) {
 	.logo {
-		padding-bottom: 20px;
+		flex-basis: 80%;
+		flex-grow: 1;
+		padding-bottom: 26px;
+		&--header {
+			margin-left: 20px;
+		}
+		&--footer {
+			flex-basis: 100%;
+		}
 	}
+	
 	.logo__link {
-		background-image: url(../img/logo-pink-blue-mobile.svg);
+		flex-basis: 100%;
+		flex-grow: 1;
+		display: block;
+	}
+	
+	.logo__item {
+		fill: #ffffff;
+		width: 75px;
+		height: auto;
+		transition: 0.3s;
+		&:hover {
+			fill: $logo-hover;
+		}
+		&:active {
+			fill: #fff;
+			opacity: 0.3;
+		}
+		&--desktop {
+			width: 147px;
+			display: none;
+		}
+		&--tablet {
+			width: 147px;
+			display: none;
+		}
+		&--mobile {
+			display: inline-block;
+		}
+	}
+	
+	.logo--footer .logo__link {
 		width: 147px;
 		height: 40px;
-		margin-top: 6px;
+		margin-left: auto;
+		margin-right: auto;
 	}
-	.logo--footer {
-		flex-basis: 150px;
-		flex-grow: 0;
-		padding: 0;
-		margin: 0;
+	
+	@media (min-width: $breakpoint-tablet) {
+		.logo {
+			padding-bottom: 20px;
+		}
+		.logo__link {
+			margin-top: 6px;
+		}
+		.logo--footer {
+			flex-basis: 150px;
+			flex-grow: 0;
+			padding: 0;
+			margin: 0;
+		}
+		.logo__item {
+			&--desktop {
+				display: none;
+			}
+			&--tablet {
+				display: inline-block;
+			}
+			&--mobile {
+				display: none;
+			}
+		}
 	}
-}
-
-@media (min-width: $breakpoint-desktop) {
-	.logo--header {
-		margin: 0;
-		flex-basis: 150px;
-		flex-grow: 0;
+	
+	@media (min-width: $breakpoint-desktop) {
+		.logo--header {
+			margin: 0;
+			flex-basis: 150px;
+			flex-grow: 0;
+		}
+		.logo__link:hover .logo__item {
+			fill: $logo-hover;
+		}
+		.logo__item {
+			&--desktop {
+				display: inline-block;
+			}
+			&--tablet {
+				display: none;
+			}
+			&--mobile {
+				display: none;
+			}
+		}
 	}
-	.logo__link {
-		// !! achtung logo big
-		background-image: url(../img/logo-pink-blue-mobile.svg);
-	}
-}

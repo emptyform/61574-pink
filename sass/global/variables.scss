@@ -3,6 +3,7 @@ $bg-gray: #f2f2f2;
 $font-primary: #000;
 $font-light: #fff;
 $fong-gray: #eaeaea;
+$fong-light-gray: #e9ebec;
 $fong-dark-gray: #e5e5e5;
 $font-deep-blue: #283645;
 $font-deep-blue-dark: #1d2631;
@@ -13,6 +14,9 @@ $color-social-links: #d22856;
 $status-success: #2aab6d;
 $btn-reset: #dddfe0;
 
+$logo-hover: #d22856;
+
 $breakpoint-mobile: 320px;
 $breakpoint-tablet: 660px;
 $breakpoint-desktop: 960px;
+$retina: "@media (min-resolution: 144dpi), (min-resolution: 1.5dppx)";

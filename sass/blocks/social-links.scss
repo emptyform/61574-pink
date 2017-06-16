@@ -14,7 +14,7 @@
 	height: 51px;
 	display: block;
 	border-radius: 50%;
-	border: 3px solid #e9ebec;
+	border: 3px solid $fong-light-gray;
 	text-align: center;
 	line-height: 51px;
 	box-sizing: border-box;
@@ -26,6 +26,12 @@
 
 .social-link svg {
 	fill: $color-social-links;
+}
+
+.social-link:hover {
+	border: 3px solid $font-deep-blue:;
+}
+.social-link:hover svg {
 }
 
 @media (min-width: $breakpoint-tablet) {}
