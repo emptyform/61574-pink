@@ -61,13 +61,12 @@
 	margin-bottom: 30px;
 	display: block;
 	font-weight: 700;
-	
 	&:hover {
 		background-color: #fff;
 		color: $font-pink;
 	}
 	&:active {
-		color: rgba( $font-pink, .3 );
+		color: rgba( $font-pink, .3);
 		background-color: #fff;
 	}
 }
@@ -75,7 +74,7 @@
 .promo__platforms {
 	font-size: 14px;
 	color: $font-light;
-	line-height: 27px;
+	line-height: 23px;
 	text-align: center;
 	font-weight: 300;
 	padding-bottom: 18px;
@@ -164,9 +163,17 @@
 	.promo__link {
 		margin-top: 14px;
 		margin-bottom: 10px;
+		&--apple {
+			margin-left: 28px;
+		}
+		&--google {}
+		&--microsoft {
+			margin-right: 28px;
+		}
 	}
 	.promo__platforms {
 		font-size: 18px;
+		line-height: 27px;
 	}
 	.promo__btn {
 		padding: 16px 20px;
@@ -188,7 +195,7 @@
 		margin-right: 68%;
 	}
 	.promo__wrapper {
-		min-height: 876px;
+		min-height: 869px;
 		padding-top: 110px;
 		background-image: url("../img/iphone-hand-desktop@1x.png");
 		background-position: bottom 0 right -115px;
@@ -203,18 +210,16 @@
 	.promo__title {
 		margin-left: 0;
 		margin-right: 0;
-		margin-top: 70px;
+		margin-top: 64px;
 		width: 300px;
 		font-size: 50px;
 	}
 	.promo__btn {
-		margin-top: 52px;
+		margin-top: 51px;
 		margin-bottom: 53px;
 		font-size: 21px;
 	}
-	.promo__links {
-		
-	}
+	.promo__links {}
 	.promo__platforms {
 		margin-top: 40px;
 	}

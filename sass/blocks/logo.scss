@@ -1,7 +1,7 @@
 	.logo {
 		flex-basis: 80%;
 		flex-grow: 1;
-		padding-bottom: 26px;
+		padding-bottom: 22px;
 		&--header {
 			margin-left: 20px;
 		}
@@ -41,6 +41,26 @@
 		}
 	}
 	
+	.logo__item-footer {
+		fill: $font-deep-blue;
+		transition: 0.3s;
+		&--desktop {
+			display: none;
+		}
+		&--mobile {
+			display: inline-block;
+		}
+	}
+	
+	.logo__link--footer:hover .logo__item-footer {
+		fill: $font-pink;
+	}
+	
+	.logo__link--footer:active .logo__item-footer {
+		fill: $font-deep-blue;
+		opacity: 0.3;
+	}
+	
 	.logo--footer .logo__link {
 		width: 147px;
 		height: 40px;
@@ -51,6 +71,9 @@
 	@media (min-width: $breakpoint-tablet) {
 		.logo {
 			padding-bottom: 20px;
+			&--header {
+				padding-bottom: 14px;
+			}
 		}
 		.logo__link {
 			margin-top: 6px;
@@ -60,6 +83,7 @@
 			flex-grow: 0;
 			padding: 0;
 			margin: 0;
+			width: auto;
 		}
 		.logo__item {
 			&--desktop {
@@ -89,6 +113,14 @@
 			}
 			&--tablet {
 				display: none;
+			}
+			&--mobile {
+				display: none;
+			}
+		}
+		.logo__item-footer {
+			&--desktop {
+				display: inline-block;
 			}
 			&--mobile {
 				display: none;

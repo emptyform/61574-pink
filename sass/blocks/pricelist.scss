@@ -2,15 +2,15 @@
 	color: $font-primary;
 	margin-top: 7px;
 	background-color: $bg-gray;
+	background-image: url(../img/bg-triangle-white.svg);
+	background-position: top center;
+	background-repeat: no-repeat;
 }
 
 .pricelist__wrapper {
 	padding: 20px 0;
 	width: 100%;
 	overflow-x: scroll;
-	background-image: url(../img/bg-triangle-white.svg);
-	background-position: top center;
-	background-repeat: no-repeat;
 	padding-top: 123px;
 }
 
@@ -117,20 +117,24 @@
 
 @media (min-width: $breakpoint-tablet) {
 	.pricelist {
-		background: $bg-gray;
-		color: $font-primary;
-		margin-top: 43px;
-		padding-bottom: 45px;
+		margin-top: 2px;
+		padding-top: 40px;
+		padding-bottom: 47px;
 	}
 	.pricelist__wrapper {
 		@include container-fluid;
-		padding-top: 0;
+		padding-top: 67px;
 		//		margin-top: 25px;
 	}
 	.pricelist__table {
 		width: 100%;
-		display: block;
-	transform: none;
+		//		display: block;
+		transform: none;
+	}
+	.pricelist__table-content {
+		min-width: 400px;
+		padding-bottom: 8px;
+		line-height: 20px;
 	}
 	.pricelist__paginations {
 		display: none;
@@ -168,4 +172,23 @@
 	}
 }
 
-@media (min-width: $breakpoint-desktop) {}
+@media (min-width: $breakpoint-desktop) {
+	.pricelist {
+		padding-top: 94px;
+		padding-bottom: 73px;
+	}
+	.pricelist__table-header {
+		min-height: 100px;
+		height: 100px;
+	}
+	.pricelist__small {
+		font-size: 24px;
+	}
+	.pricelist__table-content {
+		font-size: 18px;
+		padding-top: 17px;
+		padding-bottom: 17px;
+		padding-left: 18px;
+		width: 200px;
+	}
+}
