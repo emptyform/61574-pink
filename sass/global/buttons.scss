@@ -1,11 +1,28 @@
 .btn {
-    cursor: pointer;
-    &--submit {
-        color: $font-pink;
-        border-color: $font-pink;
-    }
-    &--reset {
-        color: $btn-reset;
-        border-color: $btn-reset;
-    }
+	cursor: pointer;
+	&--submit {
+		color: $font-pink;
+		border-color: $font-pink;
+	}
+	&--submit:hover {
+		background-color: $font-pink;
+		color: $font-light;
+	}
+	&--submit:active {
+		background-color: $font-pink;
+		color: rgba($font-light, 0.3);
+	
+	}
+	&--reset {
+		color: rgba($font-deep-blue, 0.1);
+		border-color: rgba($font-deep-blue, 0.1);
+	}
+	&--reset:hover {
+		color: rgba($font-deep-blue, 0.3);
+		border-color: rgba($font-deep-blue, 0.3);
+	}
+	&--reset:active {
+		background-color: rgba($font-deep-blue, 0.3);
+		border-color: rgba($font-deep-blue, 0.02);
+	}
 }

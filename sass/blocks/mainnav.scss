@@ -8,19 +8,35 @@
 	text-align: center;
 	text-decoration: none;
 	flex-basis: 100%;
+	&--closed {
+		display: none;
+	}
+	&--nojs {
+		display: inline-block;
+	}
 }
 
 .mainnav__togler {
 	cursor: pointer;
 	margin-right: 20px;
-}
-
-.mainnav__togler--open {
-	background-image: url("../img/icon-menu-cross.svg");
 	background-repeat: no-repeat;
-	width: 24px;
 	height: 24px;
-	//	background-color: #ff6600;
+	background-color: $font-light;
+	&:hover {
+		background-color: $font-pink;
+	}
+	&:active {
+		background-color: $font-pink;
+		opacity: 0.3;
+	}
+	&--open {
+		mask-image: url("../img/icon-menu-cross.svg");
+		width: 24px;
+	}
+	&--closed {
+		mask-image: url("../img/icon-menu-burger.svg");
+		width: 50px;
+	}
 }
 
 .mainnav__wrapper {
@@ -33,10 +49,8 @@
 	margin: 0;
 	padding: 0;
 	box-shadow: 0 -1px 0 #000, inset 0 1px 0 rgba(255, 255, 255, .15);
-	
-	
-	
 }
+
 .mainnav__item:nth(last-child) {
 	border-bottom: 1px solid #010101;
 }
@@ -57,6 +71,9 @@
 }
 
 @media (min-width: $breakpoint-tablet) {
+	.mainnav__togler {
+		margin-top: 22px;
+	}
 	.mainnav__togler--open {
 		margin-top: 24px;
 	}
@@ -66,7 +83,6 @@
 }
 
 @media (min-width: $breakpoint-desktop) {
-	
 	.mainnav__togler {
 		display: none;
 	}
@@ -76,12 +92,19 @@
 		margin-bottom: -110px;
 		background-color: transparent;
 		margin-top: 15px;
+		&--closed {
+			display: inline-block;
+			vertical-align: top;
+		}
+		&--nojs {
+			display: inline-block;
+			vertical-align: top;
+		}
 	}
 	.mainnav__wrapper {
 		display: flex;
 		justify-content: space-between;
 		margin-left: 170px;
-		
 	}
 	.mainnav__item {
 		box-shadow: none;
@@ -92,13 +115,12 @@
 		&--active::after {
 			content: "";
 			position: absolute;
-			bottom:0;
-			left:0;
-			right:0;
+			bottom: 0;
+			left: 0;
+			right: 0;
 			height: 2px;
 			background-color: #fff;
-				
-			}
+		}
 	}
 	.mainnav__item a {
 		color: $font-light;
@@ -107,5 +129,4 @@
 		font-size: 18px;
 		line-height: 1;
 	}
-	
 }

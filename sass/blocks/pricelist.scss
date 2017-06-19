@@ -5,6 +5,7 @@
 	background-image: url(../img/bg-triangle-white.svg);
 	background-position: top center;
 	background-repeat: no-repeat;
+	background-size: 100% auto;
 }
 
 .pricelist__wrapper {
@@ -22,6 +23,10 @@
 .pricelist__table td,
 .pricelist__table th {
 	border: 2px solid #e5e5e5;
+}
+
+th.pricelist__table--noborder {
+	border: none;
 }
 
 .pricelist__table-content {

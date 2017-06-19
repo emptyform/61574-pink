@@ -19,6 +19,7 @@
 .page-footer__developer-link:hover svg {
 	fill: $font-deep-blue;
 }
+
 .page-footer__developer-link:active svg {
 	fill: $font-deep-blue;
 	opacity: 0.3;
@@ -35,6 +36,7 @@
 	text-decoration: none;
 	display: flex;
 	justify-content: center;
+	line-height: 30px;
 }
 
 .page-footer__developer {
@@ -42,8 +44,10 @@
 	color: $font-deep-blue;
 	line-height: 1.286;
 	text-align: left;
-	margin-top: 42px;
+	margin-top: 45px;
 	margin-bottom: 42px;
+		flex-grow: 1;
+	width: 100%;
 }
 
 @media (min-width: $breakpoint-tablet) {
@@ -57,11 +61,12 @@
 	}
 	.page-footer__developer {
 		margin-top: 18px;
+		flex-grow: 0;
+	width: auto;
 	}
 	.page-footer__developer-link {
 		justify-content: flex-end;
 	}
-	
 }
 
 @media (min-width: $breakpoint-desktop) {

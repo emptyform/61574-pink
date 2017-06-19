@@ -1,11 +1,17 @@
 .page-header {
-	background: $font-deep-blue;
 	color: $font-light;
-	//    @include container-fluid;
+	margin-bottom: -71px;
+	&--open {
+		background: $font-deep-blue;
+	}
+	&--closed {
+		background: rgba(0, 0, 0, 0.3);
+	}
+		position: relative;
+		z-index: 15;
 }
 
 .page-header__wrapper {
-	//	@include container-fluid;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-start;
@@ -21,7 +27,12 @@
 	@include readers-only;
 }
 
-@media (min-width: $breakpoint-tablet) {}
+@media (min-width: $breakpoint-tablet) {
+	.page-header {
+		margin-bottom: -110px;
+		min-height: 110px;
+	}
+}
 
 @media (min-width: $breakpoint-desktop) {
 	.page-header__wrapper {

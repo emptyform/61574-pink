@@ -4,7 +4,7 @@
 	//	margin-right: auto;
 	justify-content: center;
 	&--footer {
-		margin-top: 8px;
+		margin-top: 18px;
 		flex-grow: 1;
 	}
 }
@@ -36,7 +36,13 @@
 	opacity: 0.3;
 }
 
-
-@media (min-width: $breakpoint-tablet) {}
+@media (min-width: $breakpoint-tablet) {
+	.social-links {
+		margin-top: 0;
+	}
+	.social-links--footer {
+		margin-top: 8px;
+	}
+}
 
 @media (min-width: $breakpoint-desktop) {}
