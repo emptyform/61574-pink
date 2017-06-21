@@ -5,6 +5,10 @@
 .text-block {
 	margin-top: 45px;
 	margin-bottom: 49px;
+	//	margin-bottom: 49px;
+	&--form-page {
+		margin-bottom: 0;
+	}
 }
 
 .text-block__item {
@@ -24,6 +28,10 @@
 	display: inline-block;
 }
 
+.text-block__item--form-toptext span {
+	display: none;
+}
+
 @media (min-width: $breakpoint-tablet) {
 	.text-block {
 		margin-top: 85px;
@@ -36,14 +44,20 @@
 		&--bottom span {
 			display: block;
 		}
-		&--top {
-			
+		&--top {}
+		&--form-page {
+			margin-bottom: 0;
 		}
 	}
 	.text-block--top .text-block__item {
 		display: inline-block;
 	}
-	
+	.text-block--top .text-block__item {
+		display: inline-block;
+	}
+	.text-block__item--form-toptext span {
+		display: inline-block;
+	}
 	.text-block__item {
 		font-size: 18px;
 		display: flex;
@@ -60,5 +74,17 @@
 		&--bottom {
 			margin-top: 66px;
 		}
+		&--form-page{
+			max-width: 68%;
+		}
+		
+	}
+	.text-block__item--form-toptext {
+		display: inline-block;
+		text-align: center;
+		line-height: 33px;
+	}
+	.text-block__item--form-toptext span {
+		display: inline;
 	}
 }

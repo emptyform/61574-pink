@@ -25,6 +25,10 @@
 	margin-right: auto;
 }
 
+.header--form {
+	padding-bottom: 56px;
+}
+
 @media (min-width: $breakpoint-tablet) {
 	.header {
 		min-height: 329px;
@@ -38,13 +42,16 @@
 	.header__item {
 		font-size: 50px;
 	}
+	.header--form {
+		padding-bottom: 82px;
+	}
 }
 
 @media (min-width: $breakpoint-desktop) {
 	.header {
 		min-height: 410px;
 		padding-top: 189px;
-		background-size: 210% auto;		
+		background-size: 210% auto;
 		background-position: top center;
 		background-image: url("../img/bg-back-desktop@1x.jpg");
 		@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -54,5 +61,8 @@
 	.header__item {
 		font-size: 50px;
 		max-width: 50%;
+	}
+	.header--form .header__item {
+		max-width: 80%;
 	}
 }
