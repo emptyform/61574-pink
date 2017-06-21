@@ -7,6 +7,15 @@
 		margin-top: 18px;
 		flex-grow: 1;
 	}
+	@media (min-width: $breakpoint-tablet) {
+		margin-top: 0;
+	}
+}
+
+.social-links--footer {
+	@media (min-width: $breakpoint-tablet) {
+		margin-top: 8px;
+	}
 }
 
 .social-link {
@@ -14,7 +23,7 @@
 	height: 51px;
 	display: block;
 	border-radius: 50%;
-	border: 3px solid rgba($font-deep-blue, 0.1);
+	border: 3px solid rgba($color-primary, 0.1);
 	text-align: center;
 	line-height: 51px;
 	box-sizing: border-box;
@@ -25,24 +34,13 @@
 }
 
 .social-link svg {
-	fill: $color-social-links;
+	fill: $color-contrast;
 }
 
 .social-link:hover {
-	border: 3px solid $font-deep-blue;
+	border: 3px solid $color-primary;
 }
 
 .social-link:active svg {
 	opacity: 0.3;
 }
-
-@media (min-width: $breakpoint-tablet) {
-	.social-links {
-		margin-top: 0;
-	}
-	.social-links--footer {
-		margin-top: 8px;
-	}
-}
-
-@media (min-width: $breakpoint-desktop) {}

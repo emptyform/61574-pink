@@ -3,13 +3,32 @@
 	background-image: url("../img/bg-back-mobile@1x.jpg");
 	background-position: center -70px;
 	background-repeat: no-repeat;
-	background-color: $font-deep-blue;
+	background-color: $color-primary;
 	min-height: 170px;
 	padding-top: 97px;
 	padding-bottom: 84px;
 	box-sizing: border-box;
 	@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
 		background-image: url("../img/bg-back-mobile@2x.jpg");
+	}
+	@media (min-width: $breakpoint-tablet) {
+		min-height: 329px;
+		padding-top: 178px;
+		padding-bottom: 137px;
+		background-image: url("../img/bg-back-tablet@1x.jpg");
+		@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+			background-image: url("../img/bg-back-tablet@2x.jpg");
+		}
+	}
+	@media (min-width: $breakpoint-desktop) {
+		min-height: 410px;
+		padding-top: 189px;
+		background-size: 210% auto;
+		background-position: top center;
+		background-image: url("../img/bg-back-desktop@1x.jpg");
+		@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+			background-image: url("../img/bg-back-desktop@2x.jpg");
+		}
 	}
 }
 
@@ -23,46 +42,24 @@
 	max-width: 90%;
 	margin-left: auto;
 	margin-right: auto;
+	@media (min-width: $breakpoint-tablet) {
+		font-size: 50px;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		font-size: 50px;
+		max-width: 50%;
+	}
 }
 
 .header--form {
 	padding-bottom: 56px;
-}
-
-@media (min-width: $breakpoint-tablet) {
-	.header {
-		min-height: 329px;
-		padding-top: 178px;
-		padding-bottom: 137px;
-		background-image: url("../img/bg-back-tablet@1x.jpg");
-		@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-			background-image: url("../img/bg-back-tablet@2x.jpg");
-		}
-	}
-	.header__item {
-		font-size: 50px;
-	}
-	.header--form {
+	@media (min-width: $breakpoint-tablet) {
 		padding-bottom: 82px;
 	}
 }
 
-@media (min-width: $breakpoint-desktop) {
-	.header {
-		min-height: 410px;
-		padding-top: 189px;
-		background-size: 210% auto;
-		background-position: top center;
-		background-image: url("../img/bg-back-desktop@1x.jpg");
-		@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-			background-image: url("../img/bg-back-desktop@2x.jpg");
-		}
-	}
-	.header__item {
-		font-size: 50px;
-		max-width: 50%;
-	}
-	.header--form .header__item {
+.header--form .header__item {
+	@media (min-width: $breakpoint-desktop) {
 		max-width: 80%;
 	}
 }

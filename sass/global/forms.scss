@@ -51,7 +51,7 @@
 	text-transform: uppercase;
 	max-width: 80%;
 	text-align: center;
-	color: $font-pink;
+	color: $color-contrast;
 	@media (min-width: $breakpoint-tablet) {
 		padding-left: 37px;
 		padding-right: 37px;
@@ -78,6 +78,7 @@
 	@media (min-width: $breakpoint-tablet) {
 		&--contacts {
 			display: inline-block;
+	vertical-align: baseline;
 		}
 	}
 	@media (min-width: $breakpoint-desktop) {
@@ -101,7 +102,7 @@
 
 .form-page__title {
 	font-size: 14px;
-	color: $font-pink;
+	color: $color-contrast;
 	text-transform: uppercase;
 	line-height: 1.286;
 	font-weight: 300;
@@ -302,7 +303,7 @@
 	width: 100%;
 	margin-bottom: 19px;
 	padding: 15px 3px 15px 20px;
-	border: 2px solid $fong-dark-gray;
+	border: 2px solid $gray-dark;
 	border-radius: 2px;
 	outline: none;
 	font-size: 18px;
@@ -324,13 +325,13 @@
 .form__input[type="text"]:hover,
 .form__input[type="tel"]:hover,
 textarea.form__input:hover {
-	border-color: $font-deep-blue;
+	border-color: $color-primary;
 }
 
 .form__input[type="text"]:focus,
 .form__input[type="tel"]:focus,
 textarea.form__input:hover {
-	border-color: $font-pink;
+	border-color: $color-contrast;
 }
 
 .form__input--checkbox,
@@ -369,7 +370,7 @@ textarea.form__input:hover {
 
 .form-whatapp__label {
 	font-size: 18px;
-	color: $font-deep-blue;
+	color: $color-primary;
 	//	@media (min-width: $breakpoint-desktop) {
 	//		width: 100%;
 	//	}
@@ -382,7 +383,7 @@ textarea.form__input:hover {
 	width: 35px;
 	height: 35px;
 	margin-right: 30px;
-	border: 2px solid $fong-dark-gray;
+	border: 2px solid $gray-dark;
 	border-radius: 50%;
 	background: $font-light;
 	@media (min-width: $breakpoint-tablet) {
@@ -391,11 +392,11 @@ textarea.form__input:hover {
 }
 
 .form__input[type="radio"]:hover~.form-whatapp__label::before {
-	border-color: $font-deep-blue;
+	border-color: $color-primary;
 }
 
 .form__input[type="radio"]:active~.form-whatapp__label::before {
-	border-color: $font-pink;
+	border-color: $color-contrast;
 }
 
 .form__input--radio:checked~.form-whatapp__label::after {
@@ -474,13 +475,13 @@ textarea.form__input:hover {
 .form-activities__label {
 	position: relative;
 	font-size: 18px;
-	color: $font-deep-blue;
+	color: $color-primary;
 }
 
 .form-activities__label::before {
 	display: inline-block;
 	vertical-align: middle;
-	border: 2px solid $fong-dark-gray;
+	border: 2px solid $gray-dark;
 	border-radius: 2px;
 	background: #fff;
 	width: 35px;
@@ -493,11 +494,11 @@ textarea.form__input:hover {
 }
 
 .form__input[type="checkbox"]:hover~.form-activities__label::before {
-	border-color: $font-deep-blue;
+	border-color: $color-primary;
 }
 
 .form__input[type="checkbox"]:active~.form-activities__label::before {
-	border-color: $font-pink;
+	border-color: $color-contrast;
 }
 
 .form__input--checkbox:checked~.form-activities__label::after {
@@ -507,11 +508,10 @@ textarea.form__input:hover {
 	width: 26px;
 	height: 20px;
 	content: "";
-	background-color: $font-pink;
+	background-color: $color-contrast;
 	mask: url(../img/icon-yes.svg) no-repeat;
 }
 
-// Контактная информация
 .form-contacts {
 	margin: 0;
 	padding: 0;
@@ -524,7 +524,7 @@ textarea.form__input:hover {
 		display: inline-block;
 		vertical-align: middle;
 		//		align-self: center;
-		fill: $font-pink;
+		fill: $color-contrast;
 		width: 60px;
 		height: 64px;
 		box-sizing: border-box;
@@ -532,12 +532,11 @@ textarea.form__input:hover {
 		text-align: center;
 		border-radius-right: 2px;
 		border-radius-left: 2px;
-		background-color: $fong-dark-gray;
+		background-color: $gray-dark;
 		order: 2;
 	}
 }
 
-// опишите свои эмоции
 .form-comments {
 	order: 5;
 	margin-top: 10px;
@@ -569,7 +568,7 @@ textarea.form__input:hover {
 		background-color: $status-success-hover;
 	}
 	&:disabled {
-		background-color: $fong-dark-gray;
+		background-color: $gray-dark;
 		color: $font-light;
 	}
 	@media (min-width: $breakpoint-tablet) {
@@ -580,7 +579,7 @@ textarea.form__input:hover {
 
 .required {
 	font-size: 14px;
-	color: $font-deep-blue;
+	color: $color-primary;
 	text-transform: uppercase;
 	line-height: 2.143;
 	text-align: center;
@@ -596,7 +595,7 @@ textarea.form__input:hover {
 }
 
 .required__pink {
-	color: $font-pink;
+	color: $color-contrast;
 }
 
 .required__desktop {

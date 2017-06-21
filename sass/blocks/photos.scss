@@ -1,5 +1,15 @@
 .photos {
 	@include container-fluid;
+	@media (min-width: $breakpoint-tablet) {
+		display: flex;
+		flex-wrap: wrap;
+		align-self: center;
+		justify-content: space-between;
+		margin-top: 32px;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		margin-top: 3px;
+	}
 }
 
 .photos__title {
@@ -9,6 +19,15 @@
 .photos__item {
 	background: $bg-gray;
 	margin-top: 20px;
+	@media (min-width: $breakpoint-tablet) {
+		width: 48.4%;
+		display: flex;
+		flex-direction: column;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		width: 32%;
+		margin-top: 50px;
+	}
 }
 
 .photos__img,
@@ -24,7 +43,7 @@
 }
 
 .photos__username {
-	color: $font-deep-blue;
+	color: $color-primary;
 	font-size: 14px;
 	font-weight: 700;
 	margin-bottom: 0;
@@ -37,17 +56,21 @@
 }
 
 .photos__text {
-	color: $font-deep-blue;
+	color: $color-primary;
 	font-size: 14px;
 	font-weight: 400;
 	margin-top: 5px;
 	line-height: 22px;
 	margin-bottom: 0;
+	@media (min-width: $breakpoint-tablet) {
+		flex-grow: 1;
+		min-height: 44px;
+	}
 }
 
 .photos__meta {
 	font-size: 12px;
-	color: $font-pink;
+	color: $color-contrast;
 	text-transform: uppercase;
 	line-height: 1;
 	text-align: left;
@@ -57,7 +80,7 @@
 	display: block;
 	&::before {
 		content: "";
-		background: $font-pink;
+		background: $color-contrast;
 		mask: url(../img/icon-heart.svg);
 		width: 13px;
 		height: 12px;
@@ -66,33 +89,7 @@
 		top: 0;
 		left: 0;
 	}
-}
-
-.photos__descr {
-	padding-left: 18px;
-	padding-right: 18px;
-	padding-top: 4px;
-	padding-bottom: 25px;
-}
-
-@media (min-width: $breakpoint-tablet) {
-	.photos {
-		display: flex;
-		flex-wrap: wrap;
-		align-self: center;
-		justify-content: space-between;
-		margin-top: 32px;
-	}
-	.photos__item {
-		width: 48.4%;
-		display: flex;
-		flex-direction: column;
-	}
-	.photos__text {
-		flex-grow: 1;
-		min-height: 44px;
-	}
-	.photos__meta {
+	@media (min-width: $breakpoint-tablet) {
 		padding-left: 0;
 		padding-right: 32px;
 		margin-top: 20px;
@@ -102,22 +99,19 @@
 			left: auto;
 		}
 	}
-	.photos__descr {
+}
+
+.photos__descr {
+	padding-left: 18px;
+	padding-right: 18px;
+	padding-top: 4px;
+	padding-bottom: 25px;
+	@media (min-width: $breakpoint-tablet) {
 		padding-left: 25px;
 		padding-top: 10px;
 		padding-bottom: 28px;
 		display: flex;
 		flex-grow: 1;
 		flex-direction: column;
-	}
-}
-
-@media (min-width: $breakpoint-desktop) {
-	.photos {
-		margin-top: 3px;
-	}
-	.photos__item {
-		width: 32%;
-		margin-top: 50px;
 	}
 }

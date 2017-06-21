@@ -1,0 +1,120 @@
+.modal {
+	background-color: $font-light;
+	box-shadow: 0px 7px 15px 0px rgba(0, 1, 1, 0.15);
+	position: fixed;
+	z-index: 100;
+	top: 40%;
+	@media (min-width: $breakpoint-tablet) {
+		width: 460px;
+		margin-left: auto;
+		margin-right: auto;
+		left: 50%;
+		margin-left: -230px;
+	}
+	&--closed {
+		display: none;
+	}
+	&--open {
+		display: inline-block;
+		vertical-align: baseline;
+	}
+	&--succes {
+		@media (min-width: $breakpoint-desktop) {
+			width: 780px;
+			margin-left: -390px;
+		}
+	}
+}
+
+.modal__wrapper {
+	display: inline-block;
+	vertical-align: baseline;
+	@media (min-width: $breakpoint-tablet) {}
+}
+
+.modal__header {
+	font-size: 18px;
+	font-weight: bold;
+	//	line-height: 18px;
+	text-align: center;
+	margin-top: 45px;
+	margin-bottom: 25px;
+	@include container-fluid;
+	@media (min-width: $breakpoint-tablet) {
+		font-size: 30px;
+		max-width: 50%;
+		margin-top: 40px;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		max-width: 80%;
+		width: auto;
+	}
+}
+
+.modal--error .modal__header {
+	@media (min-width: $breakpoint-desktop) {
+		max-width: 55%;
+		width: auto;
+	}
+}
+
+.modal__content {
+	font-size: 14px;
+	line-height: 24px;
+	text-align: center;
+	color: $color-primary;
+	max-width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	@media (min-width: $breakpoint-tablet) {
+		font-size: 18px;
+		max-width: 70%;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		max-width: 55%;
+	}
+}
+
+.modal--error .modal__content {
+	@media (min-width: $breakpoint-desktop) {
+		max-width: 65%;
+	}
+}
+
+.modal__footer {
+	background-color: $bg-gray;
+	padding-top: 64px;
+	padding-bottom: 50px;
+	@include container-fluid;
+	@media (min-width: $breakpoint-tablet) {
+		margin-top: 37px;
+		text-align: center;
+		margin-right: 0;
+		margin-left: 0;
+		width: 100%;
+		padding-top: 45px;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		padding-top: 54px;
+	}
+}
+
+.modal--error .modal__footer {
+	@media (min-width: $breakpoint-desktop) {
+		width: auto;
+	}
+}
+
+.modal__footer .btn {
+	@media (min-width: $breakpoint-desktop) {
+		width: 458px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.modal__footer .form__submit--error {
+	@media (min-width: $breakpoint-desktop) {
+		width: 300px;
+	}
+}

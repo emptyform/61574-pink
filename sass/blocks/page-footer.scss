@@ -3,77 +3,71 @@
 	&--visible {
 		display: block;
 	}
+	@media (min-width: $breakpoint-tablet) {
+		display: block;
+		margin-top: 33px;
+		margin-bottom: 37px;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		margin-top: 65px;
+	}
 }
 
 .page-footer__wrapper {
 	@include container-fluid;
 	display: flex;
 	flex-wrap: wrap;
+	@media (min-width: $breakpoint-tablet) {
+		flex-wrap: nowrap;
+	}
 }
 
 .page-footer__developer {
 	flex-grow: 1;
 	text-align: center;
-}
-
-.page-footer__developer-link:hover svg {
-	fill: $font-deep-blue;
-}
-
-.page-footer__developer-link:active svg {
-	fill: $font-deep-blue;
-	opacity: 0.3;
+	@media (min-width: $breakpoint-tablet) {
+		margin-top: 18px;
+		flex-grow: 0;
+		width: auto;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		font-size: 18px;
+	}
 }
 
 .page-footer__developer svg {
-	fill: $color-social-links;
+	fill: $color-contrast;
 	margin-left: 14px;
 	transition: 0.3s;
 }
 
 .page-footer__developer-link {
-	color: $font-deep-blue;
+	color: $color-primary;
 	text-decoration: none;
 	display: flex;
 	justify-content: center;
 	line-height: 30px;
-}
-
-.page-footer__developer {
-	font-size: 14px;
-	color: $font-deep-blue;
-	line-height: 1.286;
-	text-align: left;
-	margin-top: 45px;
-	margin-bottom: 42px;
-		flex-grow: 1;
-	width: 100%;
-}
-
-@media (min-width: $breakpoint-tablet) {
-	.page-footer {
-		display: block;
-		margin-top: 33px;
-		margin-bottom: 37px;
-	}
-	.page-footer__wrapper {
-		flex-wrap: nowrap;
-	}
-	.page-footer__developer {
-		margin-top: 18px;
-		flex-grow: 0;
-	width: auto;
-	}
-	.page-footer__developer-link {
+	@media (min-width: $breakpoint-tablet) {
 		justify-content: flex-end;
 	}
 }
 
-@media (min-width: $breakpoint-desktop) {
-	.page-footer {
-		margin-top: 65px;
-	}
-	.page-footer__developer {
-		font-size: 18px;
-	}
+.page-footer__developer-link:hover svg {
+	fill: $color-primary;
+}
+
+.page-footer__developer-link:active svg {
+	fill: $color-primary;
+	opacity: 0.3;
+}
+
+.page-footer__developer {
+	font-size: 14px;
+	color: $color-primary;
+	line-height: 1.286;
+	text-align: left;
+	margin-top: 45px;
+	margin-bottom: 42px;
+	flex-grow: 1;
+	width: 100%;
 }

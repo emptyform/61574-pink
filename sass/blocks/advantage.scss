@@ -4,6 +4,14 @@
 	display: flex;
 	flex-basis: 100%;
 	flex-direction: column;
+	@media (min-width: $breakpoint-tablet) {
+		flex-basis: 50%;
+		margin-bottom: 17px;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		margin-top: 10px;
+		line-height: 26px;
+	}
 }
 
 .advantage__title {
@@ -12,12 +20,37 @@
 	color: $font-primary;
 	margin-bottom: 0;
 	margin-top: 14px;
+	@media (min-width: $breakpoint-desktop) {
+		font-size: 30px;
+		font-weight: 700;
+		max-width: 250px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 .advantage__content {
-	color: $font-deep-blue;
+	color: $color-primary;
 	font-size: 14px;
 	line-height: 24px;
+	@media (min-width: $breakpoint-desktop) {
+		font-size: 18px;
+		max-width: 250px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 9px;
+		line-height: 30px;
+	}
+}
+
+.advantage__content,
+.advantage__title {
+	@media (min-width: $breakpoint-tablet) {
+		text-align: left;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		text-align: center;
+	}
 }
 
 .advantage__img {
@@ -31,65 +64,28 @@
 	&--change {
 		display: none;
 	}
-}
-
-@media (min-width: $breakpoint-tablet) {
-	.advantage {
-		flex-basis: 50%;
-		//		height: 100px;
-		margin-bottom: 17px;
+	&--friends {
+		@media (min-width: $breakpoint-tablet) {
+			margin-top: -73px;
+		}
 	}
-	.advantage__img {
+	@media (min-width: $breakpoint-tablet) {
 		order: -1;
 		flex-basis: 50%;
 		margin-left: none;
 		margin-right: none;
-	}
-	.advantage__content,
-	.advantage__title {
 		text-align: left;
 	}
-	.advantage__img {
-		text-align: left;
-	}
-	.advantage__img--friends {
-		margin-top: -73px;
-	}
-}
-
-@media (min-width: $breakpoint-desktop) {
-	
-	.advantage {
-		margin-top: 10px;
-		line-height: 26px;
-	}
-	.advantage__img {
+	@media (min-width: $breakpoint-desktop) {
 		text-align: center;
 		margin-top: 40px;
 		&--up {
 			display: inline-block;
+	vertical-align: baseline;
 		}
 		&--change {
 			display: inline-block;
+	vertical-align: baseline;
 		}
-	}
-	.advantage__content,
-	.advantage__title {
-		text-align: center;
-	}
-	.advantage__title {
-		font-size: 30px;
-		font-weight: 700;
-		max-width: 250px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.advantage__content {
-		font-size: 18px;
-		max-width: 250px;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 9px;
-		line-height: 30px;
 	}
 }
