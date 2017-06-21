@@ -1,7 +1,7 @@
 .information {
 	position: relative;
 	z-index: 3;
-	margin-top: 313px;
+	margin-top: 304px;
 }
 
 .information__header {
@@ -14,6 +14,7 @@
 	background-image: url(../img/bg-triangle-white.svg);
 	background-position: top center;
 	background-repeat: no-repeat;
+	background-size: 100% auto;
 	padding-top: 98px;
 }
 
@@ -56,9 +57,6 @@
 	.information {
 		margin-top: 0;
 	}
-	.advantage__img {
-		text-align: left;
-	}
 	.information__toprow {
 		order: 1;
 		width: 50%;
@@ -67,7 +65,9 @@
 		order: 2;
 		width: 50%;
 	}
-	.information__wrapper,
+	.information__wrapper {
+		margin-top: 25px;
+	}
 	.information__wrapper h2 {
 		margin-top: 0;
 	}
@@ -78,6 +78,7 @@
 	.information__txt-tired,
 	.information__txt-offer {
 		font-size: 40px;
+		margin-bottom: 0;
 	}
 	.information__header {
 		margin-top: 50px;
@@ -111,9 +112,14 @@
 	.information__toprow {
 		width: 100%;
 		display: flex;
+		margin-top: -140px;
 	}
 	.information__bottomrow {
 		width: 100%;
 		display: flex;
+		margin-top: 43px;
+	}
+	.information__wrapper {
+		margin-top: 78px;
 	}
 }

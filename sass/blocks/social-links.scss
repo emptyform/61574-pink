@@ -4,7 +4,7 @@
 	//	margin-right: auto;
 	justify-content: center;
 	&--footer {
-		margin-top: 8px;
+		margin-top: 18px;
 		flex-grow: 1;
 	}
 }
@@ -14,7 +14,7 @@
 	height: 51px;
 	display: block;
 	border-radius: 50%;
-	border: 3px solid #e9ebec;
+	border: 3px solid rgba($font-deep-blue, 0.1);
 	text-align: center;
 	line-height: 51px;
 	box-sizing: border-box;
@@ -28,6 +28,21 @@
 	fill: $color-social-links;
 }
 
-@media (min-width: $breakpoint-tablet) {}
+.social-link:hover {
+	border: 3px solid $font-deep-blue;
+}
+
+.social-link:active svg {
+	opacity: 0.3;
+}
+
+@media (min-width: $breakpoint-tablet) {
+	.social-links {
+		margin-top: 0;
+	}
+	.social-links--footer {
+		margin-top: 8px;
+	}
+}
 
 @media (min-width: $breakpoint-desktop) {}

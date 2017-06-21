@@ -37,6 +37,7 @@
 	.advantage {
 		flex-basis: 50%;
 		//		height: 100px;
+		margin-bottom: 17px;
 	}
 	.advantage__img {
 		order: -1;
@@ -48,9 +49,20 @@
 	.advantage__title {
 		text-align: left;
 	}
+	.advantage__img {
+		text-align: left;
+	}
+	.advantage__img--friends {
+		margin-top: -73px;
+	}
 }
 
 @media (min-width: $breakpoint-desktop) {
+	
+	.advantage {
+		margin-top: 10px;
+		line-height: 26px;
+	}
 	.advantage__img {
 		text-align: center;
 		margin-top: 40px;
@@ -71,12 +83,13 @@
 		max-width: 250px;
 		margin-left: auto;
 		margin-right: auto;
-		
 	}
 	.advantage__content {
 		font-size: 18px;
-		max-width: 220px;
+		max-width: 250px;
 		margin-left: auto;
 		margin-right: auto;
+		margin-top: 9px;
+		line-height: 30px;
 	}
 }
