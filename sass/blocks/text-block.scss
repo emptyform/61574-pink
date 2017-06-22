@@ -5,39 +5,13 @@
 .text-block {
 	margin-top: 45px;
 	margin-bottom: 49px;
-	//	margin-bottom: 49px;
 	&--form-page {
 		margin-bottom: 0;
 	}
-}
-
-.text-block__item {
-	font-size: 14px;
-	color: $font-deep-blue;
-	line-height: 2.143;
-	font-weight: 400;
-	text-align: center;
-	display: block;
-	margin-top: 0;
-	margin-bottom: 0;
-	margin-bottom: 10px;
-}
-
-.text-block__item span {
-	//	display: none;
-	display: inline-block;
-}
-
-.text-block__item--form-toptext span {
-	display: none;
-}
-
-@media (min-width: $breakpoint-tablet) {
-	.text-block {
+	@media (min-width: $breakpoint-tablet) {
 		margin-top: 85px;
 		margin-bottom: 49px;
 		max-width: 85%;
-		//		line-height: 30px;;
 		&--bottom {
 			margin-top: 70px;
 		}
@@ -47,44 +21,83 @@
 		&--top {}
 		&--form-page {
 			margin-bottom: 0;
+			margin-top: 95px;
 		}
 	}
-	.text-block--top .text-block__item {
-		display: inline-block;
-	}
-	.text-block--top .text-block__item {
-		display: inline-block;
-	}
-	.text-block__item--form-toptext span {
-		display: inline-block;
-	}
-	.text-block__item {
-		font-size: 18px;
-		display: flex;
-		flex-direction: column;
-	}
-	.text-block__item span {
-		line-height: 24px;
-	}
-}
-
-@media (min-width: $breakpoint-desktop) {
-	.text-block {
+	@media (min-width: $breakpoint-desktop) {
 		margin-top: 88px;
 		&--bottom {
 			margin-top: 66px;
 		}
-		&--form-page{
+		&--form-page {
 			max-width: 68%;
 		}
-		
+		&--top {
+			max-width: 60%;
+			margin-top: 93px;
+			margin-bottom: 0;
+		}
 	}
-	.text-block__item--form-toptext {
+	
+}
+
+.text-block__item {
+	font-size: 14px;
+	color: $color-primary;
+	line-height: 2.143;
+	font-weight: 400;
+	text-align: center;
+	display: block;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-bottom: 10px;
+	@media (min-width: $breakpoint-tablet) {
+		font-size: 18px;
+		display: flex;
+		flex-direction: column;
+	}
+	@media (min-width: $breakpoint-tablet) {
+		line-height: 29px;
+	}
+}
+
+.text-block__item span {
+	display: inline-block;
+	vertical-align: baseline;
+	@media (min-width: $breakpoint-tablet) {
+		line-height: 24px;
+	}
+}
+
+.text-block__item--form-toptext span {
+	display: none;
+}
+
+.text-block--top .text-block__item {
+	@media (min-width: $breakpoint-tablet) {
 		display: inline-block;
+		vertical-align: baseline;
+	}
+}
+
+.text-block__item--form-toptext span {
+	@media (min-width: $breakpoint-tablet) {
+		display: inline-block;
+		vertical-align: baseline;
+	}
+}
+
+.text-block__item--form-toptext {
+	@media (min-width: $breakpoint-desktop) {
+		display: inline-block;
+		vertical-align: baseline;
 		text-align: center;
 		line-height: 33px;
 	}
-	.text-block__item--form-toptext span {
+}
+
+.text-block__item--form-toptext span {
+	@media (min-width: $breakpoint-desktop) {
 		display: inline;
 	}
 }

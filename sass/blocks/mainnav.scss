@@ -1,5 +1,5 @@
 .mainnav {
-	background: $font-deep-blue;
+	background: $color-primary;
 	font-size: 18px;
 	color: $font-light;
 	font-weight: bold;
@@ -13,6 +13,25 @@
 	}
 	&--nojs {
 		display: inline-block;
+		vertical-align: baseline;
+	}
+	@media (min-width: $breakpoint-tablet) {
+		margin-top: 22px;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		flex-basis: auto;
+		flex-grow: 1;
+		margin-bottom: -110px;
+		background-color: transparent;
+		margin-top: 15px;
+		&--closed {
+			display: inline-block;
+			vertical-align: baseline;
+		}
+		&--nojs {
+			display: inline-block;
+			vertical-align: baseline;
+		}
 	}
 }
 
@@ -23,10 +42,10 @@
 	height: 24px;
 	background-color: $font-light;
 	&:hover {
-		background-color: $font-pink;
+		background-color: $color-contrast;
 	}
 	&:active {
-		background-color: $font-pink;
+		background-color: $color-contrast;
 		opacity: 0.3;
 	}
 	&--open {
@@ -37,11 +56,25 @@
 		mask-image: url("../img/icon-menu-burger.svg");
 		width: 50px;
 	}
+	@media (min-width: $breakpoint-tablet) {
+		margin-top: 22px;
+		&--open {
+			margin-top: 24px;
+		}
+	}
+	@media (min-width: $breakpoint-desktop) {
+		display: none;
+	}
 }
 
 .mainnav__wrapper {
 	margin: 0;
 	padding: 0;
+	@media (min-width: $breakpoint-desktop) {
+		display: flex;
+		justify-content: space-between;
+		margin-left: 170px;
+	}
 }
 
 .mainnav__item {
@@ -49,6 +82,22 @@
 	margin: 0;
 	padding: 0;
 	box-shadow: 0 -1px 0 #000, inset 0 1px 0 rgba(255, 255, 255, .15);
+	@media (min-width: $breakpoint-desktop) {
+		box-shadow: none;
+		padding-bottom: 8px;
+		&--active {
+			position: relative;
+		}
+		&--active::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 2px;
+			background-color: #fff;
+		}
+	}
 }
 
 .mainnav__item:nth(last-child) {
@@ -68,61 +117,7 @@
 		color: #d22856;
 		opacity: 0.3;
 	}
-}
-
-@media (min-width: $breakpoint-tablet) {
-	.mainnav__togler {
-		margin-top: 22px;
-	}
-	.mainnav__togler--open {
-		margin-top: 24px;
-	}
-	.mainnav {
-		margin-top: 22px;
-	}
-}
-
-@media (min-width: $breakpoint-desktop) {
-	.mainnav__togler {
-		display: none;
-	}
-	.mainnav {
-		flex-basis: auto;
-		flex-grow: 1;
-		margin-bottom: -110px;
-		background-color: transparent;
-		margin-top: 15px;
-		&--closed {
-			display: inline-block;
-			vertical-align: top;
-		}
-		&--nojs {
-			display: inline-block;
-			vertical-align: top;
-		}
-	}
-	.mainnav__wrapper {
-		display: flex;
-		justify-content: space-between;
-		margin-left: 170px;
-	}
-	.mainnav__item {
-		box-shadow: none;
-		padding-bottom: 8px;
-		&--active {
-			position: relative;
-		}
-		&--active::after {
-			content: "";
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			height: 2px;
-			background-color: #fff;
-		}
-	}
-	.mainnav__item a {
+	@media (min-width: $breakpoint-desktop) {
 		color: $font-light;
 		font-weight: 200;
 		text-transform: none;

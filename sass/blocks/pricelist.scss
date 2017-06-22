@@ -6,6 +6,15 @@
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-size: 100% auto;
+	@media (min-width: $breakpoint-tablet) {
+		margin-top: 24px;
+		padding-top: 40px;
+		padding-bottom: 54px;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		padding-top: 92px;
+		padding-bottom: 73px;
+	}
 }
 
 .pricelist__wrapper {
@@ -13,11 +22,22 @@
 	width: 100%;
 	overflow-x: scroll;
 	padding-top: 123px;
+	@media (min-width: $breakpoint-tablet) {
+		@include container-fluid;
+		padding-top: 45px;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		padding-top: 68px;
+	}
 }
 
 .pricelist__table {
 	transform: translateX(-531px);
 	border-collapse: collapse;
+	@media (min-width: $breakpoint-tablet) {
+		width: 100%;
+		transform: none;
+	}
 }
 
 .pricelist__table td,
@@ -31,15 +51,41 @@ th.pricelist__table--noborder {
 
 .pricelist__table-content {
 	background: $font-light;
-	color: $font-deep-blue;
+	color: $color-primary;
 	font-size: 14px;
 	text-transform: uppercase;
-	border-bottom: 2px solid $fong-dark-gray;
+	border-bottom: 2px solid $gray-dark;
 	padding: 16px 21px;
 	padding-right: 15px;
 	line-height: 28px;
 	min-width: 276px;
 	box-sizing: border-box;
+	@media (min-width: $breakpoint-tablet) {
+		background: $font-light;
+		color: $color-primary;
+		font-size: 14px;
+		border: 2px solid $gray-dark;
+		border-collapse: collapse;
+		font-size: 14px;
+		text-transform: none;
+		padding: 10px 14px;
+		min-width: 140px;
+		padding-bottom: 8px;
+		line-height: 20px;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		font-size: 18px;
+		padding-top: 17px;
+		padding-bottom: 17px;
+		padding-left: 18px;
+		width: 200px;
+	}
+}
+
+.pricelist__table-header:nth-child(2) {
+	@media (min-width: $breakpoint-tablet) {
+		border-left: none;
+	}
 }
 
 .pricelist__title {
@@ -47,7 +93,7 @@ th.pricelist__table--noborder {
 }
 
 .pricelist__table-header {
-	background: $font-deep-blue;
+	background: $color-primary;
 	color: $font-light;
 	font-size: 18px;
 	font-weight: bold;
@@ -59,6 +105,21 @@ th.pricelist__table--noborder {
 	height: 98px;
 	box-sizing: border-box;
 	//	width: 400px;
+	@media (min-width: $breakpoint-tablet) {
+		font-size: 16px;
+		font-weight: bold;
+		text-transform: uppercase;
+		line-height: 1.667;
+		text-align: center;
+		position: relative;
+		min-height: 79px;
+		height: 79px;
+		border-left: 2px solid $gray-dark;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		min-height: 100px;
+		height: 100px;
+	}
 }
 
 .pricelist__marker {
@@ -95,6 +156,12 @@ th.pricelist__table--noborder {
 	text-align: center;
 	display: block;
 	font-weight: 300;
+	@media (min-width: $breakpoint-tablet) {
+		font-size: 18px;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		font-size: 24px;
+	}
 }
 
 .pricelist__paginations {
@@ -104,6 +171,9 @@ th.pricelist__table--noborder {
 	display: flex;
 	margin-top: 20px;
 	padding-bottom: 46px;
+	@media (min-width: $breakpoint-tablet) {
+		display: none;
+	}
 }
 
 .pricelist__pagination {
@@ -120,80 +190,8 @@ th.pricelist__table--noborder {
 	}
 }
 
-@media (min-width: $breakpoint-tablet) {
-	.pricelist {
-		margin-top: 2px;
-		padding-top: 40px;
-		padding-bottom: 47px;
-	}
-	.pricelist__wrapper {
-		@include container-fluid;
-		padding-top: 67px;
-		//		margin-top: 25px;
-	}
-	.pricelist__table {
-		width: 100%;
-		//		display: block;
-		transform: none;
-	}
-	.pricelist__table-content {
-		min-width: 400px;
-		padding-bottom: 8px;
-		line-height: 20px;
-	}
-	.pricelist__paginations {
+.pricelist__show-hide {
+	@media (min-width: $breakpoint-tablet) {
 		display: none;
-	}
-	.pricelist__show-hide {
-		display: none;
-	}
-	.pricelist__table-content {
-		background: $font-light;
-		color: $font-deep-blue;
-		font-size: 14px;
-		border: 2px solid $fong-dark-gray;
-		border-collapse: collapse;
-		font-size: 14px;
-		text-transform: none;
-		min-width: 140px;
-		padding: 10px 14px;
-	}
-	.pricelist__table-header {
-		font-size: 16px;
-		font-weight: bold;
-		text-transform: uppercase;
-		line-height: 1.667;
-		text-align: center;
-		position: relative;
-		min-height: 79px;
-		height: 79px;
-		border-left: 2px solid $fong-dark-gray;
-	}
-	.pricelist__table-header:nth-child(2) {
-		border-left: none;
-	}
-	.pricelist__small {
-		font-size: 18px;
-	}
-}
-
-@media (min-width: $breakpoint-desktop) {
-	.pricelist {
-		padding-top: 94px;
-		padding-bottom: 73px;
-	}
-	.pricelist__table-header {
-		min-height: 100px;
-		height: 100px;
-	}
-	.pricelist__small {
-		font-size: 24px;
-	}
-	.pricelist__table-content {
-		font-size: 18px;
-		padding-top: 17px;
-		padding-bottom: 17px;
-		padding-left: 18px;
-		width: 200px;
 	}
 }

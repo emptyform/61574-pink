@@ -1,39 +1,70 @@
 .effect {
 	display: none;
+	@media (min-width: $breakpoint-tablet) {
+		display: block;
+		margin-top: 54px;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		padding-top: 20px;
+		padding-bottom: 89px;
+		margin-top: 0;
+		background-color: $bg-gray;
+	}
 }
 
 .effect__wrapper {
 	@include container-fluid;
-}
-
-@media (min-width: $breakpoint-tablet) {
-	.effect {
-		display: block;
-		margin-top: 54px;
-	}
-	.effect__wrapper {
+	@media (min-width: $breakpoint-tablet) {
 		display: flex
 	}
-	.effect__img,
-	.effect__txt {
+}
+
+.effect__img,
+.effect__txt {
+	@media (min-width: $breakpoint-tablet) {
 		width: 50%;
 		justify-content: space-between;
 		margin: 0;
 	}
-	.effect__img {
+}
+
+.effect__img {
+	@media (min-width: $breakpoint-tablet) {
 		position: relative;
 	}
-	.effect__img svg {
-		fill: $fong-double-dark-gray;
+	@media (min-width: $breakpoint-desktop) {
+		width: 39%;
+	}
+}
+
+.effect__img svg {
+	@media (min-width: $breakpoint-tablet) {
+		fill: $gray-double-dark;
 		max-width: 238px;
 		height: auto;
 		position: absolute;
 		z-index: 10;
 	}
-	.effect__txt {
+	@media (min-width: $breakpoint-desktop) {
+		max-width: 300px;
+		height: auto;
+		margin-top: 10px
+	}
+}
+
+.effect__txt {
+	@media (min-width: $breakpoint-tablet) {
 		margin-top: 10px;
 	}
-	.effect__title {
+	@media (min-width: $breakpoint-desktop) {
+		glex-grow: 1;
+		width: 61%;
+		margin-top: 44px;
+	}
+}
+
+.effect__title {
+	@media (min-width: $breakpoint-tablet) {
 		font-size: 30px;
 		color: $font-primary;
 		font-weight: 700;
@@ -41,25 +72,55 @@
 		line-height: 37px;
 		margin-bottom: 10px;
 	}
-	.effect__content {}
-	.effect__content {
+	@media (min-width: $breakpoint-desktop) {
+		font-size: 30px;
+		margin-top: 57px;
+		max-width: 100%;
+		line-height: 37px;
+		margin-bottom: 10px;
+	}
+}
+
+.effect__content {
+	@media (min-width: $breakpoint-tablet) {
 		max-width: 95.4%;
 		margin-top: 0;
 		margin-bottom: 0;
-		color: $font-deep-blue;
+		color: $color-primary;
 		font-size: 14px;
 		line-height: 24px;
 	}
-	.effect__link {
+	@media (min-width: $breakpoint-desktop) {
+		font-size: 18px;
+		line-height: 30px;
+		max-width: 92%;
+		margin-top: 22px;
+	}
+}
+
+.effect__link {
+	@media (min-width: $breakpoint-tablet) {
 		margin-top: 10px;
 		display: block;
 	}
-	.effect__link a {
-		color: $font-pink;
+	@media (min-width: $breakpoint-desktop) {
+		margin-top: 32px;
+	}
+}
+
+.effect__link a {
+	@media (min-width: $breakpoint-tablet) {
+		color: $color-contrast;
 		font-size: 14px;
 	}
-	.effect__time {
-		color: $font-pink;
+	@media (min-width: $breakpoint-desktop) {
+		font-size: 18px;
+	}
+}
+
+.effect__time {
+	@media (min-width: $breakpoint-tablet) {
+		color: $color-contrast;
 		border-radius: 50%;
 		font-size: 96px;
 		font-weight: 700;
@@ -69,51 +130,15 @@
 		line-height: 170px;
 		text-align: center;
 		display: inline-block;
-		vertical-align: middle;
+		vertical-align: baseline;
 		background-color: $font-light;
-		border: 13px solid $font-pink;
+		border: 13px solid $color-contrast;
 		margin-top: 55px;
 		margin-left: 19px;
 		position: relative;
 		z-index: 10;
 	}
-}
-
-@media (min-width: $breakpoint-desktop) {
-	.effect {
-		padding-top: 20px;
-		padding-bottom: 89px;
-		margin-top: 0;
-		background-color: $bg-gray;
-	}
-	.effect__img {
-		width: 39%;
-	}
-	.effect__txt {
-		glex-grow: 1;
-		width: 61%;
-		margin-top: 44px;
-	}
-	.effect__title {
-		font-size: 30px;
-		margin-top: 57px;
-		max-width: 100%;
-		line-height: 37px;
-		margin-bottom: 10px;
-	}
-	.effect__content {
-		font-size: 18px;
-		line-height: 30px;
-		max-width: 90%;
-		margin-top: 22px;
-	}
-	.effect__link {
-		margin-top: 32px;
-	}
-	.effect__link a {
-		font-size: 18px;
-	}
-	.effect__time {
+	@media (min-width: $breakpoint-desktop) {
 		margin-top: 81px;
 		width: 220px;
 		height: 220px;
@@ -121,10 +146,5 @@
 		border-width: 17px;
 		font-size: 120px;
 		line-height: 205px;
-	}
-	.effect__img svg {
-		max-width: 300px;
-		height: auto;
-		margin-top: 10px
 	}
 }

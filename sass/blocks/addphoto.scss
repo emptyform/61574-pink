@@ -3,10 +3,36 @@
 	//	margin-top: 10px;
 	@include container-fluid;
 	background: $bg-gray;
+	@media (min-width: $breakpoint-tablet) {
+		margin-top: 77px;
+		padding-top: 36px;
+		//		padding-bottom: 20px;
+		background-color: $bg-gray;
+		margin-left: 0;
+		margin-right: 0;
+		width: 100%;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		background: $font-light;
+		//	margin-top: 10px;
+		margin-top: 23px;
+		padding-top: 31px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 960px;
+	}
 }
 
 .addphoto__buttons {
 	margin-top: 75px;
+	@media (min-width: $breakpoint-tablet) {
+		margin-top: 64px;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		display: flex;
+		margin-top: 143px;
+		justify-content: space-between;
+	}
 }
 
 .addphoto__button {
@@ -22,17 +48,57 @@
 	margin-bottom: 12px;
 	background-color: transparent;
 	border-radius: 30px;
+	@media (min-width: $breakpoint-tablet) {
+		margin-bottom: 22px;
+		width: 95%;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		width: 45%;
+	}
 }
 
 .addphoto__wrapper {
 	padding-top: 20px;
 	padding-bottom: 31px;
-	margin-bottom: 40px;
+	margin-bottom: 32px;
 	background: $bg-gray;
+	@media (min-width: $breakpoint-tablet) {
+		display: flex;
+		flex-wrap: wrap;
+		flex-grow: 1;
+		flex-direction: row;
+		align-self: center;
+		justify-content: space-between;
+		padding-bottom: 35px;
+		width: 94%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		background: $bg-gray;
+		align-content: center;
+		justify-content: space-around;
+		padding-bottom: 35px;
+		margin-bottom: 102px;
+		width: 100%;
+	}
+}
+
+.addphoto__preview {
+	@media (min-width: $breakpoint-tablet) {
+		width: 48.4%;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		width: 32.3%;
+		margin-left: 25px;
+		margin-top: 37px;
+	}
 }
 
 .addphoto__title {
 	@include readers-only;
+	@media (min-width: $breakpoint-tablet) {}
+	@media (min-width: $breakpoint-desktop) {}
 }
 
 .addphoto__filters {
@@ -41,6 +107,24 @@
 	justify-content: center;
 	flex-wrap: wrap;
 	margin-top: 35px;
+	@media (min-width: $breakpoint-tablet) {
+		display: flex;
+		flex-direction: row;
+		margin-top: 10px;
+	}
+	@media (min-width: $breakpoint-desktop) {}
+}
+
+.addphoto__filters-wrapper {
+	@media (min-width: $breakpoint-tablet) {
+		grow: 1;
+		width: 44%;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		width: 44%;
+		margin-right: 20px;
+		margin-top: 23px;
+	}
 }
 
 .addphoto__filters-progress-wrapper {
@@ -52,33 +136,73 @@
 	&--fill {
 		display: none;
 	}
+	@media (min-width: $breakpoint-tablet) {
+		width: 82%;
+		grow: 1;
+		border-bottom: 1px solid #dddfe0;
+		&--crop,
+		&--fill,
+		&--bright {
+			display: inline-block;
+	vertical-align: baseline;
+		}
+		&--crop {}
+		&--fill {
+			margin-top: 37px;
+		}
+		&--brigh {
+			margin-top: 34px;
+		}
+	}
+	@media (min-width: $breakpoint-desktop) {
+		width: 82%;
+		grow: 1;
+		border-bottom: 1px solid #dddfe0;
+		&--crop,
+		&--fill,
+		&--bright {
+			display: inline-block;
+	vertical-align: baseline;
+		}
+		&--crop {
+			margin-top: 16px;
+		}
+	}
 }
 
 .addphoto__filters-progress {
 	position: absolute;
 	height: 2px;
-	background-color: $font-deep-blue;
+	background-color: $color-primary;
 	left: 6%;
 	right: 8%;
+	@media (min-width: $breakpoint-tablet) {}
+	@media (min-width: $breakpoint-desktop) {}
 }
 
 .addphoto__filters-progress span {
 	border-radius: 50%;
 	display: inline-block;
+	vertical-align: baseline;
 	width: 14px;
 	height: 14px;
 	box-sizing: border-box;
-	border: 2px solid $font-pink;
+	border: 2px solid $color-contrast;
 	position: absolute;
 	left: 80.8%;
 	top: -7px;
 	cursor: pointer;
 	&:active {
-		background-color: $font-pink;
+		background-color: $color-contrast;
 	}
+	@media (min-width: $breakpoint-tablet) {}
+	@media (min-width: $breakpoint-desktop) {}
 }
 
-.addphoto__filter svg {}
+.addphoto__filter svg {
+	@media (min-width: $breakpoint-tablet) {}
+	@media (min-width: $breakpoint-desktop) {}
+}
 
 .addphoto__filter {
 	width: 70px;
@@ -96,73 +220,7 @@
 		margin-right: 9%;
 		padding-top: 7px;
 	}
-}
-
-.addphoto__filter-crop-item,
-.addphoto__filter-fill-item,
-.addphoto__filter-brigh-item {
-	fill: $font-deep-blue;
-	&:hover {
-		opacity: 0.3;
-	}
-	&:active {
-		fill: $font-pink;
-		opacity: 1;
-	}
-}
-
-@media (min-width: $breakpoint-tablet) {
-	.addphoto {
-		margin-top: 77px;
-		padding-top: 36px;
-		//		padding-bottom: 20px;
-		background-color: $bg-gray;
-		margin-left: 0;
-		margin-right: 0;
-		width: 100%;
-	}
-	.addphoto__wrapper {
-		display: flex;
-		flex-wrap: wrap;
-		flex-grow: 1;
-		flex-direction: row;
-		align-self: center;
-		justify-content: space-between;
-		padding-bottom: 35px;
-		width: 94%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.addphoto__preview {
-		width: 48.4%;
-	}
-	.addphoto__filters {
-		display: flex;
-		flex-direction: row;
-		margin-top: 10px;
-	}
-	.addphoto__filters-wrapper {
-		grow: 1;
-		width: 44%;
-	}
-	.addphoto__filters-progress-wrapper {
-		width: 82%;
-		grow: 1;
-		border-bottom: 1px solid #dddfe0;
-		&--crop,
-		&--fill,
-		&--bright {
-			display: inline-block;
-		}
-		&--crop {}
-		&--fill {
-			margin-top: 37px;
-		}
-		&--brigh {
-			margin-top: 34px;
-		}
-	}
-	.addphoto__filter {
+	@media (min-width: $breakpoint-tablet) {
 		border-bottom: 1px solid #dddfe0;
 		text-align: left;
 		width: 18%;
@@ -181,119 +239,83 @@
 			line-height: 73px;
 		}
 	}
-	.addphoto__filter-crop-item {
-		width: 22px;
-		height: 22px;
-		margin-top: 28px;
-	}
-	.addphoto__filter-fill-item {
-		width: 24px;
-		height: 22px;
-	}
-	.addphoto__filter-brigh-item {
-		width: 16px;
-		height: 16px;
-		margin-left: 6px;
-	}
-	.addphoto__filter-crop-item,
-	.addphoto__filter-fill-item,
-	.addphoto__filter-brigh-item {
-		fill: $font-pink;
-	}
-	.addphoto__buttons {
-		margin-top: 64px;
-	}
-	.addphoto__button {
-		margin-bottom: 22px;
-		width: 95%;
-	}
-	.addphoto__filters-progress--end span {
-		left: 73%;
-	}
-	.addphoto__filters-progress--start span {
-		left: 13%;
-	}
-	.addphoto__filters-progress--center span {
-		left: 50%;
-	}
-}
-
-@media (min-width: $breakpoint-desktop) {
-	.addphoto {
-		background: $font-light;
-		//	margin-top: 10px;
-		margin-top: 26px;
-		padding-top: 31px;
-		margin-left: auto;
-		margin-right: auto;
-		width: 960px;
-	}
-	.addphoto__wrapper {
-		background: $bg-gray;
-		align-content: center;
-		justify-content: space-around;
-		padding-bottom: 35px;
-		margin-bottom: 92px;
-		width: 100%;
-	}
-	.addphoto__buttons {
-		display: flex;
-	}
-	.addphoto__preview {
-		width: 32.3%;
-		margin-left: 25px;
-		margin-top: 37px;
-	}
-	.addphoto__filters-wrapper {
-		width: 44%;
-		margin-right: 20px;
-		margin-top: 23px;
-	}
-	.addphoto__filter {
+	@media (min-width: $breakpoint-desktop) {
 		width: 18%;
 		&--crop {
 			padding-bottom: 4px;
 		}
-		&--fill {}
-		&--brigh {
-			//			padding-bottom: 2px;
-		}
 	}
-	.addphoto__filters-progress-wrapper {
-		width: 82%;
-		grow: 1;
-		border-bottom: 1px solid #dddfe0;
-		&--crop,
-		&--fill,
-		&--bright {
-			display: inline-block;
-		}
-		&--crop {
-			margin-top: 16px;
-		}
-		&--fill {}
-		&--brigh {}
+}
+
+.addphoto__filter-crop-item,
+.addphoto__filter-fill-item,
+.addphoto__filter-brigh-item {
+	fill: $color-primary;
+	&:hover {
+		opacity: 0.3;
 	}
-	.addphoto__filter-crop-item {
+	&:active {
+		fill: $color-contrast;
+		opacity: 1;
+	}
+	@media (min-width: $breakpoint-tablet) {
+		fill: $color-contrast;
+	}
+	@media (min-width: $breakpoint-desktop) {}
+}
+
+.addphoto__filter-crop-item {
+	@media (min-width: $breakpoint-tablet) {
+		width: 22px;
+		height: 22px;
+		margin-top: 28px;
+	}
+	@media (min-width: $breakpoint-desktop) {
 		width: 48px;
 		height: 43px;
 		margin-top: 17px;
 	}
-	.addphoto__filter-fill-item {
+}
+
+.addphoto__filter-fill-item {
+	@media (min-width: $breakpoint-tablet) {
+		width: 24px;
+		height: 22px;
+	}
+	@media (min-width: $breakpoint-desktop) {
 		width: 44px;
 		height: 44px;
 	}
-	.addphoto__filter-brigh-item {
+}
+
+.addphoto__filter-brigh-item {
+	@media (min-width: $breakpoint-tablet) {
+		width: 16px;
+		height: 16px;
+		margin-left: 6px;
+	}
+	@media (min-width: $breakpoint-desktop) {
 		width: 32px;
 		height: 32px;
 		margin-top: 17px;
-		//		margin-left: 6px;
 	}
-	.addphoto__buttons {
-		margin-top: 143px;
-		justify-content: space-between;
+}
+
+
+.addphoto__filters-progress--end span {
+	@media (min-width: $breakpoint-tablet) {
+		left: 73%;
 	}
-	.addphoto__button {
-		width: 45%;
+}
+
+.addphoto__filters-progress--start span {
+	@media (min-width: $breakpoint-tablet) {
+		left: 13%;
+	}
+}
+
+.addphoto__filters-progress--center span {
+	@media (min-width: $breakpoint-tablet) {
+		left: 50%;
 	}
 }

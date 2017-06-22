@@ -1,5 +1,4 @@
 .testimonials {
-	
 	background-color: #fff;
 	position: relative;
 	z-index: 5;
@@ -7,6 +6,16 @@
 	padding-top: 42px;
 	//	padding-bottom: 20px;
 	@include container-fluid;
+	@media (min-width: $breakpoint-tablet) {
+		margin-top: 54px;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		background: url(../img/icon-quotes.svg) no-repeat;
+		background-position: top center;
+		margin-top: 70px;
+		margin-bottom: 25px;
+		padding-top: 44px;
+	}
 }
 
 .testimonials__item {
@@ -16,6 +25,12 @@
 		flex-direction: column;
 		flex-basis: 100%;
 		flex-wrap: wrap;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		margin-top: 55px;
+		max-width: 80%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
@@ -34,18 +49,43 @@
 	text-align: center;
 	display: block;
 	order: 1;
+	@media (min-width: $breakpoint-tablet) {
+		order: 2;
+		margin-top: 15px;
+		font-size: 20px;
+		margin-bottom: 0;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		font-size: 24px;
+	}
 }
 
 .testimonials__occupation {
 	display: none;
+	@media (min-width: $breakpoint-tablet) {
+		order: 3;
+		display: block;
+		text-align: center;
+		font-size: 14px;
+		margin-top: 6px;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		font-size: 18px;
+		margin-top: 0;
+	}
 }
 
 .testimonials__txt {
 	font-size: 14px;
-	color: $font-deep-blue;
+	color: $color-primary;
 	line-height: 2.143;
 	text-align: center;
 	order: 3;
+	@media (min-width: $breakpoint-tablet) {
+		order: 1;
+		font-size: 18px;
+		line-height: 30px;
+	}
 }
 
 .testimonials__paginations {
@@ -55,6 +95,13 @@
 	display: flex;
 	background: $font-light;
 	margin-top: 18px;
+	@media (min-width: $breakpoint-tablet) {
+		margin-top: 40px;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		margin-top: 40px;
+		display: none;
+	}
 }
 
 .testimonials__pagination {
@@ -63,70 +110,40 @@
 	border-radius: 50%;
 	margin-left: 9px;
 	margin-right: 9px;
-	background-color: rgba($font-deep-blue, 0.3);
+	background-color: rgba($color-primary, 0.3);
 	cursor: pointer;
 	&:hover {
-		background-color: rgba($font-deep-blue, 0.6);
+		background-color: rgba($color-primary, 0.6);
 	}
 	&:active {
-		background-color: rgba($font-deep-blue, 0.1);
+		background-color: rgba($color-primary, 0.1);
 	}
 	&--active {
-		border: 3px solid $font-deep-blue;
+		border: 3px solid $color-primary;
 		background-color: $font-light;
 	}
 }
 
-@media (min-width: $breakpoint-tablet) {
-	.testimonials {
-		margin-top: 54px;
+.testimonials__control {
+	display: none;
+	@media (min-width: $breakpoint-desktop) {
+		display: inline-block;
+		vertical-align: baseline;
+		cursor: pointer;
 	}
-	.testimonials__txt {
-		order: 1;
-		font-size: 18px;
-		line-height: 30px;
+	position: absolute;
+	top: 140px;
+	fill: rgba($color-primary, 0.3);
+	&:hover {
+		fill: rgba($color-primary, 0.6);
 	}
-	.testimonials__name {
-		order: 2;
-		margin-top: 15px;
-		font-size: 20px;
-		margin-bottom: 0;
+	&:active {
+		fill: rgba($color-primary, 0.1);
 	}
-	.testimonials__occupation {
-		order: 3;
-		display: block;
-		text-align: center;
-		font-size: 14px;
-		margin-top: 6px;
+	&--left {
+		left: 10px;
 	}
-	.testimonials__paginations {
-		margin-top: 40px;
-	}
-}
-
-@media (min-width: $breakpoint-desktop) {
-	.testimonials {
-		background: url(../img/icon-quotes.svg) no-repeat;
-		background-position: top center;
-		margin-top: 70px;
-		margin-bottom: 25px;
-		padding-top: 44px;
-	}
-	.testimonials__paginations {
-		margin-top: 40px;
-		display: none;
-	}
-	.testimonials__item {
-		margin-top: 55px;
-		max-width: 80%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.testimonials__name {
-		font-size: 24px;
-	}
-	.testimonials__occupation {
-		font-size: 18px;
-		margin-top: 0;
+	&--right {
+		right: 10px;
 	}
 }
