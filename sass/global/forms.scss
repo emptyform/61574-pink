@@ -29,6 +29,14 @@
 	&--noborder {
 		border: none;
 		padding: 0;
+		@media (min-width: $breakpoint-tablet) {
+			border: none;
+			padding: 0;
+		}
+		@media (min-width: $breakpoint-desktop) {
+			border: none;
+			padding: 0;
+		}
 	}
 	&--submit {
 		border: none;
@@ -37,8 +45,16 @@
 			display: flex;
 			flex-wrap: nowrap;
 			flex-direction: row;
-			margin-top: 46px;
-			margin-bottom: 28px;
+			margin-top: 0;
+//			margin-bottom: 28px;
+			padding: 0;
+			margin-bottom: 0;
+			border: none;
+		}
+		@media (min-width: $breakpoint-desktop) {
+			border: none;
+			padding: 0;
+			margin-bottom: 0;
 		}
 	}
 }
@@ -52,11 +68,11 @@
 	max-width: 80%;
 	text-align: center;
 	color: $color-contrast;
+	margin: auto;
 	@media (min-width: $breakpoint-tablet) {
 		padding-left: 37px;
 		padding-right: 37px;
 	}
-	margin: auto;
 	&--name {
 		padding-left: 0;
 		padding-right: 0;
@@ -67,7 +83,13 @@
 		@media (min-width: $breakpoint-tablet) {
 			margin-left: 0;
 			margin-right: 19px;
+			padding-left: 0;
+			padding-right: 0;
 			align-self: center;
+		}
+		@media (min-width: $breakpoint-desktop) {
+			padding-left: 0;
+			padding-right: 0;
 		}
 	}
 	&--contacts,
@@ -78,7 +100,7 @@
 	@media (min-width: $breakpoint-tablet) {
 		&--contacts {
 			display: inline-block;
-	vertical-align: baseline;
+			vertical-align: baseline;
 		}
 	}
 	@media (min-width: $breakpoint-desktop) {
@@ -90,7 +112,7 @@
 	list-style: none;
 	margin-top: 23px;
 	@media (min-width: $breakpoint-tablet) {
-	margin-top: 0;
+		margin-top: 0;
 		display: flex;
 		align-content: center;
 		margin-bottom: 33px;
@@ -114,8 +136,12 @@
 	padding-bottom: 25px;
 	width: 100%;
 	@media (min-width: $breakpoint-tablet) {
-		padding-top: 58px;
+		padding-top: 34px;
 		padding-bottom: 19px;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		//		padding-top: 38px;
+		padding-bottom: 0;
 	}
 	&--name {
 		padding-top: 8px;
@@ -140,14 +166,19 @@
 			order: 4;
 			background-color: $font-light;
 		}
+		@media (min-width: $breakpoint-desktop) {
+			padding-top: 58px;
+		}
 	}
 	&--contacts {
 		padding-top: 38px;
 		@media (min-width: $breakpoint-tablet) {
+			padding-top: 33px;
 			order: 3;
 		}
 		@media (min-width: $breakpoint-desktop) {
 			padding-top: 3px;
+			padding-top: 5px;
 		}
 	}
 	&--whatapp {
@@ -171,9 +202,11 @@
 		padding-bottom: 0;
 		@media (min-width: $breakpoint-tablet) {
 			order: 5;
+			padding-top: 44px;
 		}
 		@media (min-width: $breakpoint-desktop) {
 			padding-bottom: 17px;
+			padding-top: 55px;
 		}
 	}
 	&--submit {
@@ -181,11 +214,14 @@
 		margin-top: 4px;
 		@media (min-width: $breakpoint-tablet) {
 			order: 6;
-			margin-top: 26px;
+			margin-top: 16px;
+			margin-bottom: 29px;
 		}
 		@media (min-width: $breakpoint-desktop) {
-			margin-bottom: -49px;
+			//			margin-bottom: -49px;
 			margin-top: 0;
+			padding-top: 48px;
+			margin-bottom: 0;
 		}
 	}
 }
@@ -200,15 +236,6 @@
 	@media (min-width: $breakpoint-tablet) {
 		padding-top: 36px;
 		padding-bottom: 24px;
-	}
-}
-
-.form-page__item--contacts {
-	@media (min-width: $breakpoint-tablet) {
-		padding-top: 53px;
-	}
-	@media (min-width: $breakpoint-desktop) {
-		padding-top: 5px;
 	}
 }
 

@@ -48,6 +48,7 @@
 		background-size: 700px auto;
 		@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
 			background-image: url("../img/iphone-hand-tablet@2x.png");
+			background-size: 700px auto;
 		}
 	}
 	@media (min-width: $breakpoint-desktop) {
@@ -58,6 +59,7 @@
 		background-size: 1050px auto;
 		@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
 			background-image: url("../img/iphone-hand-desktop@2x.png");
+			background-size: 1050px auto;
 		}
 	}
 }
@@ -176,11 +178,9 @@
 			margin-right: 28px;
 		}
 	}
-	
 	@media (min-width: $breakpoint-desktop) {
 		margin-top: 65px;
 	}
-	
 }
 
 .promo__link {
