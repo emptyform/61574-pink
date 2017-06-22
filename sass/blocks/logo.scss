@@ -78,6 +78,15 @@
 .logo__item-footer {
 	fill: $color-primary;
 	transition: 0.3s;
+	&:hover {
+		fill: $color-contrast;
+	}
+	
+	&:active {
+	fill: $color-primary;
+		opacity: 0.3;
+	}
+	
 	&--desktop {
 		display: none;
 	}

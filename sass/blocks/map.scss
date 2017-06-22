@@ -16,22 +16,19 @@
 		height: 33px;
 		background: url("../img/bg-triangle-white-footer.svg") no-repeat center top / 100% 33px;
 		z-index: 5;
-		
 		@media (min-width: $breakpoint-tablet) {
 			height: 69px;
 			background-size: 100% 69px;
 		}
 		@media (min-width: $breakpoint-desktop) {
-			height: 115px;
-			background-size: 100% 115px;
+			height: 125px;
+			background-size: 170% 125px;
 		}
 	}
-	
 	@media (min-resolution: 144dpi),
 	(min-resolution: 1.5dppx) {
 		background-image: url(../img/bg-map-mobile@2x.jpg);
 	}
-	
 	@media (min-width: $breakpoint-tablet) {
 		min-height: 373px;
 		margin-top: 5px;

@@ -57,7 +57,7 @@
 		&--guest {
 			width: 100%;
 			flex-grow: 1;
-			margin-top: 30px;
+			margin-top: 20px;
 			& .contacts__txt {
 				max-width: 250px;
 				margin-left: auto;
@@ -138,6 +138,9 @@ a.contacts__txt:active {
 	line-height: 1.2;
 	text-align: center;
 	display: block;
+	@media (min-width: $breakpoint-tablet) {
+		margin-bottom: 5px;
+	}
 	@media (min-width: $breakpoint-desktop) {
 		margin-bottom: 20px;
 	}

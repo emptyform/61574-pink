@@ -15,7 +15,7 @@
 	@media (min-width: $breakpoint-desktop) {
 		background: $font-light;
 		//	margin-top: 10px;
-		margin-top: 26px;
+		margin-top: 23px;
 		padding-top: 31px;
 		margin-left: auto;
 		margin-right: auto;
@@ -60,7 +60,7 @@
 .addphoto__wrapper {
 	padding-top: 20px;
 	padding-bottom: 31px;
-	margin-bottom: 40px;
+	margin-bottom: 32px;
 	background: $bg-gray;
 	@media (min-width: $breakpoint-tablet) {
 		display: flex;
@@ -79,7 +79,7 @@
 		align-content: center;
 		justify-content: space-around;
 		padding-bottom: 35px;
-		margin-bottom: 92px;
+		margin-bottom: 102px;
 		width: 100%;
 	}
 }
@@ -113,24 +113,6 @@
 		margin-top: 10px;
 	}
 	@media (min-width: $breakpoint-desktop) {}
-}
-
-.addphoto__filters-progress--end span {
-	@media (min-width: $breakpoint-tablet) {
-		left: 73%;
-	}
-}
-
-.addphoto__filters-progress--start span {
-	@media (min-width: $breakpoint-tablet) {
-		left: 13%;
-	}
-}
-
-.addphoto__filters-progress--center span {
-	@media (min-width: $breakpoint-tablet) {
-		left: 50%;
-	}
 }
 
 .addphoto__filters-wrapper {
@@ -316,5 +298,24 @@
 		width: 32px;
 		height: 32px;
 		margin-top: 17px;
+	}
+}
+
+
+.addphoto__filters-progress--end span {
+	@media (min-width: $breakpoint-tablet) {
+		left: 73%;
+	}
+}
+
+.addphoto__filters-progress--start span {
+	@media (min-width: $breakpoint-tablet) {
+		left: 13%;
+	}
+}
+
+.addphoto__filters-progress--center span {
+	@media (min-width: $breakpoint-tablet) {
+		left: 50%;
 	}
 }

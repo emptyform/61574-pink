@@ -14,7 +14,8 @@
 		background-position: top center;
 		margin-top: 70px;
 		margin-bottom: 25px;
-		padding-top: 44px;}
+		padding-top: 44px;
+	}
 }
 
 .testimonials__item {
@@ -29,7 +30,8 @@
 		margin-top: 55px;
 		max-width: 80%;
 		margin-left: auto;
-		margin-right: auto;}
+		margin-right: auto;
+	}
 }
 
 .testimonials__title {
@@ -54,7 +56,8 @@
 		margin-bottom: 0;
 	}
 	@media (min-width: $breakpoint-desktop) {
-		font-size: 24px;}
+		font-size: 24px;
+	}
 }
 
 .testimonials__occupation {
@@ -68,7 +71,8 @@
 	}
 	@media (min-width: $breakpoint-desktop) {
 		font-size: 18px;
-		margin-top: 0;}
+		margin-top: 0;
+	}
 }
 
 .testimonials__txt {
@@ -96,7 +100,8 @@
 	}
 	@media (min-width: $breakpoint-desktop) {
 		margin-top: 40px;
-		display: none;}
+		display: none;
+	}
 }
 
 .testimonials__pagination {
@@ -116,5 +121,29 @@
 	&--active {
 		border: 3px solid $color-primary;
 		background-color: $font-light;
+	}
+}
+
+.testimonials__control {
+	display: none;
+	@media (min-width: $breakpoint-desktop) {
+		display: inline-block;
+		vertical-align: baseline;
+		cursor: pointer;
+	}
+	position: absolute;
+	top: 140px;
+	fill: rgba($color-primary, 0.3);
+	&:hover {
+		fill: rgba($color-primary, 0.6);
+	}
+	&:active {
+		fill: rgba($color-primary, 0.1);
+	}
+	&--left {
+		left: 10px;
+	}
+	&--right {
+		right: 10px;
 	}
 }

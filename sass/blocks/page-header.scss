@@ -7,6 +7,9 @@
 	&--closed {
 		background: rgba(0, 0, 0, 0.3);
 	}
+	&--nojs {
+		background: $color-primary;
+	}
 	position: relative;
 	z-index: 15;
 	@media (min-width: $breakpoint-tablet) {

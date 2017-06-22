@@ -7,12 +7,12 @@
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	@media (min-width: $breakpoint-tablet) {
-		margin-top: 2px;
+		margin-top: 24px;
 		padding-top: 40px;
-		padding-bottom: 47px;
+		padding-bottom: 54px;
 	}
 	@media (min-width: $breakpoint-desktop) {
-		padding-top: 94px;
+		padding-top: 92px;
 		padding-bottom: 73px;
 	}
 }
@@ -24,7 +24,10 @@
 	padding-top: 123px;
 	@media (min-width: $breakpoint-tablet) {
 		@include container-fluid;
-		padding-top: 67px;
+		padding-top: 45px;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		padding-top: 68px;
 	}
 }
 

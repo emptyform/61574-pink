@@ -25,6 +25,15 @@
 .page-footer__developer {
 	flex-grow: 1;
 	text-align: center;
+	font-size: 14px;
+	color: $color-primary;
+	line-height: 1.286;
+	text-align: left;
+	margin-top: 45px;
+	margin-bottom: 42px;
+	flex-grow: 1;
+	width: 100%;
+	
 	@media (min-width: $breakpoint-tablet) {
 		margin-top: 18px;
 		flex-grow: 0;
@@ -59,15 +68,4 @@
 .page-footer__developer-link:active svg {
 	fill: $color-primary;
 	opacity: 0.3;
-}
-
-.page-footer__developer {
-	font-size: 14px;
-	color: $color-primary;
-	line-height: 1.286;
-	text-align: left;
-	margin-top: 45px;
-	margin-bottom: 42px;
-	flex-grow: 1;
-	width: 100%;
 }

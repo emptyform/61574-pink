@@ -21,6 +21,7 @@
 		&--top {}
 		&--form-page {
 			margin-bottom: 0;
+			margin-top: 95px;
 		}
 	}
 	@media (min-width: $breakpoint-desktop) {
@@ -31,7 +32,13 @@
 		&--form-page {
 			max-width: 68%;
 		}
+		&--top {
+			max-width: 60%;
+			margin-top: 93px;
+			margin-bottom: 0;
+		}
 	}
+	
 }
 
 .text-block__item {
@@ -48,6 +55,9 @@
 		font-size: 18px;
 		display: flex;
 		flex-direction: column;
+	}
+	@media (min-width: $breakpoint-tablet) {
+		line-height: 29px;
 	}
 }
 
