@@ -6,18 +6,13 @@
 	&--footer {
 		margin-top: 18px;
 		flex-grow: 1;
-	}
-	@media (min-width: $breakpoint-tablet) {
-		margin-top: 0;
-	}
-}
-
-.social-links--footer {
-	@media (min-width: $breakpoint-tablet) {
-		margin-top: 8px;
-	}
-	@media (min-width: $breakpoint-desktop) {
-		margin-left: 20px;
+		@media (min-width: $breakpoint-tablet) {
+			margin-top: 8px;
+		}
+		@media (min-width: $breakpoint-desktop) {
+			justify-content: flex-start;
+			margin-left: 10.6%;
+		}
 	}
 }
 

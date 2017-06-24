@@ -30,7 +30,9 @@
 	flex-wrap: wrap;
 	align-items: flex-start;
 	padding-top: 22px;
+	@media (min-width: $breakpoint-tablet) {}
 	@media (min-width: $breakpoint-desktop) {
+		display: flex;
 		@include container-fluid;
 	}
 }
