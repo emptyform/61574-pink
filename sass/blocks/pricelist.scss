@@ -25,9 +25,11 @@
 	@media (min-width: $breakpoint-tablet) {
 		@include container-fluid;
 		padding-top: 45px;
+		overflow-x: hidden;
 	}
 	@media (min-width: $breakpoint-desktop) {
 		padding-top: 68px;
+		overflow-x: hidden;
 	}
 }
 
@@ -172,6 +174,9 @@ th.pricelist__table--noborder {
 	margin-top: 20px;
 	padding-bottom: 46px;
 	@media (min-width: $breakpoint-tablet) {
+		display: none;
+	}
+	@media (min-width: $breakpoint-desktop) {
 		display: none;
 	}
 }

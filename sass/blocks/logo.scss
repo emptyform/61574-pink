@@ -1,17 +1,205 @@
+.logo__item {
+	&--big {
+		width: auto;
+		height: auto;
+		@media (min-width: $breakpoint-tablet) {
+			width: 147px;
+			height: 40px;
+		}
+		@media (min-width: $breakpoint-desktop) {}
+	}
+}
+
+.logo__link--desktop .logo-mobile__txt {
+	fill: $font-light;
+	display: inline-block;
+	vertical-align: baseline;
+	@media (min-width: $breakpoint-tablet) {
+		display: none;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		display: none;
+	}
+}
+
+.logo__link--desktop .logo-desktop__txt {
+	display: none;
+	fill: $font-light;
+	transition: 0.3s;
+	@media (min-width: $breakpoint-tablet) {
+		display: inline-block;
+		vertical-align: baseline;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		display: inline-block;
+		vertical-align: baseline;
+	}
+}
+
+.logo__link--desktop .logo-desktop__i {
+	fill: $color-contrast;
+	transition: 0.3s;
+	display: none;
+	@media (min-width: $breakpoint-tablet) {
+		display: none;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		display: inline-block;
+		vertical-align: baseline;
+	}
+}
+
+.logo__link--desktop .logo-desktop__glass {
+	fill: $font-light;
+	transition: 0.3s;
+	display: none;
+	@media (min-width: $breakpoint-desktop) {
+		display: inline-block;
+		vertical-align: baseline;
+	}
+}
+
+.logo__link--desktop .logo-tablet__glass {
+	fill: $font-light;
+	transition: 0.3s;
+	display: none;
+	@media (min-width: $breakpoint-tablet) {
+		display: inline-block;
+		vertical-align: baseline;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		display: none;
+	}
+}
+
+.logo__link--desktop .logo-desktop__stars {
+	fill: $color-contrast;
+	transition: 0.3s;
+	display: none;
+	@media (min-width: $breakpoint-tablet) {
+		display: none;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		display: inline-block;
+		vertical-align: baseline;
+	}
+}
+
+.logo__link--desktop:hover .logo-mobile__txt,
+.logo__link--desktop:hover .logo-desktop__txt,
+.logo__link--desktop:hover .logo-desktop__i,
+.logo__link--desktop:hover .logo-desktop__glass,
+.logo__link--desktop:hover .logo-tablet__glass,
+.logo__link--desktop:hover .logo-desktop__stars,
+.logo__link--footer:hover .logo-mobile__txt,
+.logo__link--footer:hover .logo-desktop__txt,
+.logo__link--footer:hover .logo-desktop__i,
+.logo__link--footer:hover .logo-desktop__glass,
+.logo__link--footer:hover .logo-tablet__glass,
+.logo__link--footer:hover .logo-desktop__stars {
+	fill: $color-contrast;
+}
+
+.logo__link--desktop:active .logo-mobile__txt,
+.logo__link--desktop:active .logo-desktop__txt,
+.logo__link--desktop:active .logo-desktop__i,
+.logo__link--desktop:active .logo-desktop__glass,
+.logo__link--desktop:active .logo-tablet__glass,
+.logo__link--desktop:active .logo-desktop__stars {
+	fill: $font-light;
+	opacity: 0.3;
+}
+
+.logo__link--footer:active .logo-mobile__txt,
+.logo__link--footer:active .logo-desktop__txt,
+.logo__link--footer:active .logo-desktop__i,
+.logo__link--footer:active .logo-desktop__glass,
+.logo__link--footer:active .logo-tablet__glass,
+.logo__link--footer:active .logo-desktop__stars {
+	fill: $font-primary;
+	opacity: 0.3;
+}
+
+.logo__link--footer .logo-mobile__txt {
+	display: none;
+}
+
+.logo__link--footer .logo-desktop__txt {
+	display: inline-block;
+	fill: $font-primary;
+	transition: 0.3s;
+}
+
+.logo__link--footer .logo-desktop__i {
+	fill: $color-contrast;
+	transition: 0.3s;
+	display: none;
+	@media (min-width: $breakpoint-tablet) {
+		display: none;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		display: inline-block;
+		vertical-align: baseline;
+	}
+}
+
+.logo__link--footer .logo-desktop__glass {
+	fill: $color-contrast;
+	transition: 0.3s;
+	display: none;
+	@media (min-width: $breakpoint-desktop) {
+		display: inline-block;
+		vertical-align: baseline;
+	}
+}
+
+.logo__link--footer .logo-tablet__glass {
+	fill: $color-contrast;
+	transition: 0.3s;
+	display: inline-block;
+	vertical-align: baseline;
+	@media (min-width: $breakpoint-desktop) {
+		display: none;
+	}
+}
+
+.logo__link--footer .logo-desktop__stars {
+	fill: $font-primary;
+	transition: 0.3s;
+	display: none;
+	@media (min-width: $breakpoint-tablet) {
+		display: none;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		display: inline-block;
+		vertical-align: baseline;
+	}
+}
+
 .logo {
 	//		flex-basis: 70%;
 	flex-grow: 1;
-	padding-bottom: 22px;
-	&--header {
-		margin-left: 20px;
-	}
-	&--footer {
-		flex-basis: 100%;
+	//	padding-top: 22px;
+	@media (min-width: $breakpoint-desktop) {
+		margin: 0;
+		flex-basis: 280px;
+		width: 280px;
+		flex-grow: 0;
 	}
 	@media (min-width: $breakpoint-tablet) {
 		padding-bottom: 20px;
-		&--header {
+	}
+	&--header {
+		margin-left: 20px;
+		@media (min-width: $breakpoint-tablet) {
 			padding-bottom: 14px;
+		}
+	}
+	&--footer {
+		flex-basis: 100%;
+		text-align: center;
+		@media (min-width: $breakpoint-tablet) {
+			text-align: left;
 		}
 	}
 }
@@ -26,99 +214,7 @@
 }
 
 .logo__item {
-	fill: #ffffff;
-	width: 75px;
-	height: auto;
 	transition: 0.3s;
-	&:hover {
-		fill: $color-contrast;
-	}
-	&:active {
-		fill: #fff;
-		opacity: 0.3;
-	}
-	&--desktop {
-		width: 147px;
-		display: none;
-	}
-	&--tablet {
-		width: 147px;
-		display: none;
-	}
-	&--mobile {
-		display: inline-block;
-		vertical-align: baseline;
-	}
-	@media (min-width: $breakpoint-tablet) {
-		&--desktop {
-			display: none;
-		}
-		&--tablet {
-			display: inline-block;
-			vertical-align: baseline;
-		}
-		&--mobile {
-			display: none;
-		}
-	}
-	@media (min-width: $breakpoint-desktop) {
-		&--desktop {
-			display: inline-block;
-			vertical-align: baseline;
-		}
-		&--tablet {
-			display: none;
-		}
-		&--mobile {
-			display: none;
-		}
-	}
-}
-
-.logo__item-footer {
-	fill: $color-primary;
-	transition: 0.3s;
-	&:hover {
-		fill: $color-contrast;
-	}
-	
-	&:active {
-	fill: $color-primary;
-		opacity: 0.3;
-	}
-	
-	&--desktop {
-		display: none;
-	}
-	&--mobile {
-		display: inline-block;
-		vertical-align: baseline;
-	}
-	@media (min-width: $breakpoint-desktop) {
-		&--desktop {
-			display: inline-block;
-			vertical-align: baseline;
-		}
-		&--mobile {
-			display: none;
-		}
-	}
-}
-
-.logo__link--footer:hover .logo__item-footer {
-	fill: $color-contrast;
-}
-
-.logo__link--footer:active .logo__item-footer {
-	fill: $color-primary;
-	opacity: 0.3;
-}
-
-.logo--footer .logo__link {
-	width: 147px;
-	height: 40px;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .logo--footer {
@@ -128,19 +224,5 @@
 		padding: 0;
 		margin: 0;
 		width: auto;
-	}
-}
-
-.logo--header {
-	@media (min-width: $breakpoint-desktop) {
-		margin: 0;
-		flex-basis: 150px;
-		flex-grow: 0;
-	}
-}
-
-.logo__link:hover .logo__item {
-	@media (min-width: $breakpoint-desktop) {
-		fill: $color-contrast;
 	}
 }
